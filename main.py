@@ -6,7 +6,7 @@ data_file_path = 'data/bank-churn-dataset.csv'
 
 
 def main():
-    stats = DataBaselineStats.from_csv(uri=data_file_path, output_path="data/statistics.json")
+    stats = DataBaselineStats.from_csv(uri=data_file_path)
     print(json.dumps(stats, indent=4))
 
 
