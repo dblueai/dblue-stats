@@ -1,3 +1,6 @@
+import json
+import os
+
 import numpy as np
 import pandas as pd
 
@@ -35,7 +38,7 @@ class DataBaselineStats:
 
     @classmethod
     def get_missing_count(cls, column: pd.Series):
-        return column.isnull().sum()
+        return int(column.isnull().sum())
 
     @classmethod
     def get_quantiles(cls, column: pd.Series):
@@ -54,7 +57,7 @@ class DataBaselineStats:
 
         stats = {
             "mean": describe["mean"],
-            "sum": column.sum(),
+            "sum": float(column.sum()),
             "std_dev": describe["std"],
             "min": describe["min"],
             "max": describe["max"],
@@ -79,7 +82,7 @@ class DataBaselineStats:
         return stats
 
     @classmethod
-    def get_stats(cls, df: pd.DataFrame):
+    def get_stats(cls, df: pd.DataFrame, output_path: str = None):
 
         # Get number of rows in the DataFrame
         record_count = cls.get_record_count(df=df)
@@ -116,19 +119,39 @@ class DataBaselineStats:
             "features": features,
         }
 
+        # Save output in a file
+        if output_path:
+            cls.save_stats_output(baseline_stats, output_path)
+
         return baseline_stats
 
     @classmethod
-    def from_pandas(cls, df: pd.DataFrame):
+    def from_pandas(cls, df: pd.DataFrame, output_path: str = None):
         if df is None or df.empty:
             raise DblueDataStatsException("Pandas DataFrame can't be empty")
 
-        return cls.get_stats(df=df)
+        return cls.get_stats(df=df, output_path=output_path)
 
     @classmethod
-    def from_csv(cls, uri):
-        pass
+    def from_csv(cls, uri, output_path: str = None):
+        if not os.path.exists(uri):
+            raise DblueDataStatsException("CSV file not found at %s", uri)
+
+        df = pd.read_csv(uri)
+
+        return cls.get_stats(df=df, output_path=output_path)
 
     @classmethod
-    def from_parquet(cls, uri):
-        pass
+    def from_parquet(cls, uri, output_path: str = None):
+        if not os.path.exists(uri):
+            raise DblueDataStatsException("Parquet file not found at %s", uri)
+
+        df = pd.read_parquet(uri, engine="fastparquet")
+
+        return cls.get_stats(df=df, output_path=output_path)
+
+    @classmethod
+    def save_stats_output(cls, stats, output_path):
+
+        with open(output_path, "w") as f:
+            json.dump(stats, f, indent=2)
