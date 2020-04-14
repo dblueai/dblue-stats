@@ -19,7 +19,7 @@ Fot getting started with MLWatch go to [https://mlwatch.dblue.ai](https://mlwatc
 3. Initialization
 
 	```bash
-    from dblue_mlwatch import MLWatch
+    from dblue_stats import MLWatch
     
     watcher = MLWatch(
         account='account id received from dblue',

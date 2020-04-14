@@ -10,7 +10,7 @@ from setuptools.command.test import test as TestCommand
 def version():
     project_root = os.path.abspath(os.path.dirname(__file__))
 
-    version_file = os.path.join(project_root, "dblue_mlwatch", "configs", "version.txt")
+    version_file = os.path.join(project_root, "dblue_stats", "configs", "version.txt")
 
     with open(version_file, 'r') as f:
         return f.read().strip()
@@ -38,26 +38,26 @@ class PyTest(TestCommand):
         sys.exit(errcode)
 
 
-PACKAGE_NAME = 'dblue-mlwatch'
+PACKAGE_NAME = 'dblue-stats'
 PACKAGE_VERSION = version()
 
 setup(
     name=PACKAGE_NAME,
     version=PACKAGE_VERSION,
-    description='Dblue MLWatch SDK for real-time machine learning model monitoring',
+    description='Dblue stats library for generating baseline statistics of ML features',
     long_description=read_readme(),
     long_description_content_type="text/markdown",
     maintainer='Rajesh Hegde',
     maintainer_email='rh@dblue.ai',
     author='Rajesh Hegde',
     author_email='rh@dblue.ai',
-    url='https://github.com/dblueai/dblue-mlwatch-python-sdk',
+    url='https://github.com/dblueai/dblue-stats',
     license='Apache2',
     platforms='any',
     packages=find_packages(),
-    package_dir={'dblue_mlwatch': 'dblue_mlwatch'},
+    package_dir={'dblue_stats': 'dblue_stats'},
     package_data={
-        'dblue_mlwatch': ['configs/*.yaml', 'configs/*.txt']
+        'dblue_stats': ['configs/*.yaml', 'configs/*.txt']
     },
     keywords=[
         'dblue',
@@ -65,14 +65,11 @@ setup(
         'deep-learning',
         'monitoring',
         'mlwatch',
+        'statistics'
 
     ],
     install_requires=requirements(),
-    extras_require={
-        "system-metrics": [
-            "psutil==5.7.0",
-        ],
-    },
+    extras_require={},
     classifiers=[
         'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: Apache Software License',

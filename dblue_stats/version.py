@@ -1,6 +1,6 @@
 import os
 
-from dblue_data_stats.config import PROJECT_ROOT
+from dblue_stats.config import PROJECT_ROOT
 
 version_file = os.path.join(PROJECT_ROOT, "configs", "version.txt")
 

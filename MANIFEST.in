@@ -1,4 +1,4 @@
 include README.md
 include LICENSE
 include requirements/*.txt
-include dblue_data_stats/configs/*
+include dblue_stats/configs/*

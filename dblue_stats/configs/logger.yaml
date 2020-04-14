@@ -13,7 +13,7 @@ handlers:
     stream: ext://sys.stdout
 
 loggers:
-  dblue_data_stats:
+  dblue_stats:
     handlers: [console]
     level: DEBUG
 

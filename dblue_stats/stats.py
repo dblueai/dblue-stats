@@ -5,8 +5,8 @@ from typing import Dict
 import numpy as np
 import pandas as pd
 
-from dblue_data_stats.exceptions import DblueDataStatsException
-from dblue_data_stats.version import VERSION
+from dblue_stats.exceptions import DblueDataStatsException
+from dblue_stats.version import VERSION
 
 
 class DataBaselineStats:
