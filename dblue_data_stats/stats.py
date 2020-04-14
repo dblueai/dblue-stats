@@ -1,5 +1,6 @@
 import json
 import os
+from typing import Dict
 
 import numpy as np
 import pandas as pd
@@ -151,7 +152,10 @@ class DataBaselineStats:
         return cls.get_stats(df=df, output_path=output_path)
 
     @classmethod
-    def save_stats_output(cls, stats, output_path):
+    def save_stats_output(cls, stats: Dict, output_path: str):
+
+        if not output_path.endswith(".json"):
+            output_path = "{}.json".format(output_path)
 
         with open(output_path, "w") as f:
-            json.dump(stats, f, indent=2)
+            json.dump(stats, f, indent=4)
