@@ -202,16 +202,16 @@
                 "top": "France",
                 "distribution": [
                     {
-                        "name": "Spain",
-                        "percent": 24.77,
+                        "name": "France",
+                        "percent": 50.13999999999999,
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 83.3266047638272
+                                "percent": 83.84523334662943
                             },
                             {
                                 "class_name": "1",
-                                "percent": 16.673395236172787
+                                "percent": 16.15476665337056
                             }
                         ]
                     },
@@ -230,16 +230,16 @@
                         ]
                     },
                     {
-                        "name": "France",
-                        "percent": 50.13999999999999,
+                        "name": "Spain",
+                        "percent": 24.77,
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 83.84523334662943
+                                "percent": 83.3266047638272
                             },
                             {
                                 "class_name": "1",
-                                "percent": 16.15476665337056
+                                "percent": 16.673395236172787
                             }
                         ]
                     }
@@ -256,20 +256,6 @@
                 "top": "Male",
                 "distribution": [
                     {
-                        "name": "Female",
-                        "percent": 45.43,
-                        "by_class": [
-                            {
-                                "class_name": "0",
-                                "percent": 74.92846136913933
-                            },
-                            {
-                                "class_name": "1",
-                                "percent": 25.071538630860662
-                            }
-                        ]
-                    },
-                    {
                         "name": "Male",
                         "percent": 54.56999999999999,
                         "by_class": [
@@ -280,6 +266,20 @@
                             {
                                 "class_name": "1",
                                 "percent": 16.455928165658786
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Female",
+                        "percent": 45.43,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 74.92846136913933
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 25.071538630860662
                             }
                         ]
                     }
@@ -1048,8 +1048,8 @@
                 "top": "1",
                 "distribution": [
                     {
-                        "name": "0",
-                        "percent": 29.45,
+                        "name": "1",
+                        "percent": 70.55,
                         "by_class": [
                             {
                                 "class_name": "0",
@@ -1062,8 +1062,8 @@
                         ]
                     },
                     {
-                        "name": "1",
-                        "percent": 70.55,
+                        "name": "0",
+                        "percent": 29.45,
                         "by_class": [
                             {
                                 "class_name": "0",
@@ -1088,8 +1088,8 @@
                 "top": "1",
                 "distribution": [
                     {
-                        "name": "0",
-                        "percent": 48.49,
+                        "name": "1",
+                        "percent": 51.51,
                         "by_class": [
                             {
                                 "class_name": "0",
@@ -1102,8 +1102,8 @@
                         ]
                     },
                     {
-                        "name": "1",
-                        "percent": 51.51,
+                        "name": "0",
+                        "percent": 48.49,
                         "by_class": [
                             {
                                 "class_name": "0",

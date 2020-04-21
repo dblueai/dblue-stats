@@ -1,7 +1,8 @@
+import copy
 import json
 import os
 from typing import Dict
-import copy
+
 import numpy as np
 import pandas as pd
 
@@ -67,7 +68,7 @@ class DataBaselineStats:
         labels = [str(x + 1) for x in range(bin_size)]
         cuts, bins = pd.cut(x=column, bins=bin_size, precision=2, labels=labels, retbins=True)
 
-        value_counts = cuts.value_counts(normalize=True, sort=False).to_dict()
+        value_counts = cuts.value_counts(normalize=True).to_dict()
 
         distribution = []
 
@@ -84,7 +85,7 @@ class DataBaselineStats:
 
     @classmethod
     def get_categorical_distribution(cls, column: pd.Series):
-        value_counts = column.value_counts(normalize=True, sort=False).to_dict()
+        value_counts = column.value_counts(normalize=True).to_dict()
 
         return value_counts
 
@@ -112,7 +113,6 @@ class DataBaselineStats:
         value_counts = cls.get_categorical_distribution(column=column)
 
         distinct_count = len(value_counts.keys())
-        _top = sorted(value_counts.items(), key=lambda x: x[1], reverse=True)[0][0]
 
         distribution = []
         for k, v in value_counts.items():
@@ -123,7 +123,7 @@ class DataBaselineStats:
 
         stats = {
             "distinct_count": distinct_count,
-            "top": str(_top),
+            "top": distribution[0]["name"],
             "distribution": distribution
         }
 
@@ -147,7 +147,7 @@ class DataBaselineStats:
                     "percent": (len(temp_df) / len(df)) * 100
                 })
         else:
-            value_counts = df[target_column_name].value_counts(normalize=True, sort=False).to_dict()
+            value_counts = df[target_column_name].value_counts(normalize=True).to_dict()
 
             # Convert keys to string in case it's not already
             value_counts = {str(k): v for k, v in value_counts.items()}
