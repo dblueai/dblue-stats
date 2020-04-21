@@ -114,16 +114,100 @@ class DataBaselineStats:
         distinct_count = len(value_counts.keys())
         _top = sorted(value_counts.items(), key=lambda x: x[1], reverse=True)[0][0]
 
-        # Normalize to 100
-        value_counts = {k: v * 100 for k, v in value_counts.items()}
+        distribution = []
+        for k, v in value_counts.items():
+            distribution.append({
+                "name": str(k),
+                "percent": v * 100  # Normalize to 100
+            })
 
         stats = {
             "distinct_count": distinct_count,
             "top": str(_top),
-            "distribution": value_counts
+            "distribution": distribution
         }
 
         return stats
+
+    @classmethod
+    def get_feature_distribution_by_target(cls, df: pd.DataFrame, target_column_name: str, baseline_stats: Dict):
+        target = baseline_stats["target"]
+
+        for feature in baseline_stats["features"]:
+            column_name = feature["name"]
+            _df = df[[column_name, target_column_name]]
+
+            if feature["data_type"] in ["integer", "number"]:
+                distribution = feature["numerical_stats"]["distribution"]
+
+                for dist in distribution:
+                    lower_bound = dist["lower_bound"]
+                    upper_bound = dist["upper_bound"]
+
+                    temp_df = _df[(_df[column_name] >= lower_bound) & (_df[column_name] < upper_bound)]
+
+                    # Convert keys to string in case it's not already
+                    _dist_by_class = []
+
+                    if target["data_type"] in ["integer", "number"]:
+                        for target_dist in target["numerical_stats"]["distribution"]:
+                            target_lower_bound = target_dist["lower_bound"]
+                            target_upper_bound = target_dist["upper_bound"]
+                            temp_df2 = temp_df[(temp_df[target_column_name] >= target_lower_bound) & (
+                                    temp_df[column_name] < target_upper_bound)]
+
+                            _dist_by_class.append({
+                                "lower_bound": target_lower_bound,
+                                "upper_bound": target_upper_bound,
+                                "percent": (len(temp_df2) / len(temp_df)) * 100
+                            })
+                    else:
+                        value_counts = temp_df[target_column_name].value_counts(normalize=True, sort=False).to_dict()
+
+                        value_counts = {str(k): v for k, v in value_counts.items()}
+
+                        for target_class in target["categorical_stats"]["distribution"]:
+                            _dist_by_class.append({
+                                "class_name": target_class["name"],
+                                "percent": value_counts.get(target_class["name"], 0) * 100
+                            })
+
+                        dist["by_class"] = _dist_by_class
+            else:
+                distribution = feature["categorical_stats"]["distribution"]
+
+                for dist in distribution:
+
+                    temp_df = _df[_df[column_name] == dist["name"]]
+
+                    # Convert keys to string in case it's not already
+                    _dist_by_class = []
+
+                    if target["data_type"] in ["integer", "number"]:
+                        for target_dist in target["numerical_stats"]["distribution"]:
+                            target_lower_bound = target_dist["lower_bound"]
+                            target_upper_bound = target_dist["upper_bound"]
+                            temp_df2 = temp_df[(temp_df[target_column_name] >= target_lower_bound) & (
+                                    temp_df[column_name] < target_upper_bound)]
+
+                            _dist_by_class.append({
+                                "lower_bound": target_lower_bound,
+                                "upper_bound": target_upper_bound,
+                                "percent": (len(temp_df2) / len(temp_df)) * 100
+                            })
+                    else:
+                        value_counts = temp_df[target_column_name].value_counts(normalize=True, sort=False).to_dict()
+
+                        value_counts = {str(k): v for k, v in value_counts.items()}
+
+                        for target_class in target["categorical_stats"]["distribution"]:
+                            _dist_by_class.append({
+                                "class_name": target_class["name"],
+                                "percent": value_counts.get(target_class["name"], 0) * 100
+                            })
+
+                        dist["by_class"] = _dist_by_class
+
 
     @classmethod
     def get_stats(cls, df: pd.DataFrame, target_column_name: str, output_path: str = None):
@@ -167,6 +251,13 @@ class DataBaselineStats:
             "features": features,
             "target": target,
         }
+
+        # Get feature value distribution by target values
+        cls.get_feature_distribution_by_target(
+            df=df,
+            target_column_name=target_column_name,
+            baseline_stats=baseline_stats
+        )
 
         # Save output in a file
         if output_path:
