@@ -42,52 +42,152 @@
                     {
                         "lower_bound": 349.5,
                         "upper_bound": 400.0,
-                        "percent": 0.19
+                        "percent": 0.19,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 0
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 100.0
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 400.0,
                         "upper_bound": 450.0,
-                        "percent": 1.7000000000000002
+                        "percent": 1.7000000000000002,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 74.69879518072288
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 25.301204819277107
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 450.0,
                         "upper_bound": 500.0,
-                        "percent": 4.54
+                        "percent": 4.54,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 80.08948545861297
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 19.910514541387027
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 500.0,
                         "upper_bound": 550.0,
-                        "percent": 9.78
+                        "percent": 9.78,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 77.97494780793319
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 22.025052192066806
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 550.0,
                         "upper_bound": 600.0,
-                        "percent": 14.45
+                        "percent": 14.45,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 79.29362880886427
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 20.706371191135734
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 600.0,
                         "upper_bound": 650.0,
-                        "percent": 18.709999999999997
+                        "percent": 18.709999999999997,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 79.15326902465166
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 20.846730975348336
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 650.0,
                         "upper_bound": 700.0,
-                        "percent": 19.470000000000002
+                        "percent": 19.470000000000002,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 81.35245901639344
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 18.647540983606557
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 700.0,
                         "upper_bound": 750.0,
-                        "percent": 15.18
+                        "percent": 15.18,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 80.1311475409836
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 19.86885245901639
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 750.0,
                         "upper_bound": 800.0,
-                        "percent": 9.53
+                        "percent": 9.53,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 80.06198347107438
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 19.93801652892562
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 800.0,
                         "upper_bound": 850.0,
-                        "percent": 6.45
+                        "percent": 6.45,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 79.85781990521326
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 20.14218009478673
+                            }
+                        ]
                     }
                 ]
             }
@@ -100,11 +200,50 @@
             "categorical_stats": {
                 "distinct_count": 3,
                 "top": "France",
-                "distribution": {
-                    "Spain": 24.77,
-                    "France": 50.13999999999999,
-                    "Germany": 25.09
-                }
+                "distribution": [
+                    {
+                        "name": "Spain",
+                        "percent": 24.77,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 83.3266047638272
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 16.673395236172787
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Germany",
+                        "percent": 25.09,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 67.55679553607014
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 32.44320446392985
+                            }
+                        ]
+                    },
+                    {
+                        "name": "France",
+                        "percent": 50.13999999999999,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 83.84523334662943
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 16.15476665337056
+                            }
+                        ]
+                    }
+                ]
             }
         },
         {
@@ -115,10 +254,36 @@
             "categorical_stats": {
                 "distinct_count": 2,
                 "top": "Male",
-                "distribution": {
-                    "Male": 54.56999999999999,
-                    "Female": 45.43
-                }
+                "distribution": [
+                    {
+                        "name": "Female",
+                        "percent": 45.43,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 74.92846136913933
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 25.071538630860662
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Male",
+                        "percent": 54.56999999999999,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 83.54407183434121
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 16.455928165658786
+                            }
+                        ]
+                    }
+                ]
             }
         },
         {
@@ -159,52 +324,152 @@
                     {
                         "lower_bound": 17.926,
                         "upper_bound": 25.4,
-                        "percent": 6.11
+                        "percent": 6.11,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 92.47135842880525
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 7.528641571194762
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 25.4,
                         "upper_bound": 32.8,
-                        "percent": 21.790000000000003
+                        "percent": 21.790000000000003,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 92.33593391463974
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 7.664066085360258
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 32.8,
                         "upper_bound": 40.2,
-                        "percent": 36.29
+                        "percent": 36.29,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 86.96610636538992
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 13.033893634610086
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 40.2,
                         "upper_bound": 47.6,
-                        "percent": 18.709999999999997
+                        "percent": 18.709999999999997,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 69.96258685195083
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 30.03741314804917
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 47.6,
                         "upper_bound": 55.0,
-                        "percent": 9.1
+                        "percent": 9.1,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 46.01449275362319
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 53.985507246376805
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 55.0,
                         "upper_bound": 62.400000000000006,
-                        "percent": 4.41
+                        "percent": 4.41,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 48.565965583174
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 51.434034416826
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 62.400000000000006,
                         "upper_bound": 69.80000000000001,
-                        "percent": 2.08
+                        "percent": 2.08,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 72.11538461538461
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 27.884615384615387
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 69.80000000000001,
                         "upper_bound": 77.2,
-                        "percent": 1.27
+                        "percent": 1.27,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 88.9763779527559
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 11.023622047244094
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 77.2,
                         "upper_bound": 84.60000000000001,
-                        "percent": 0.2
+                        "percent": 0.2,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 95.0
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 5.0
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 84.60000000000001,
                         "upper_bound": 92.0,
-                        "percent": 0.04
+                        "percent": 0.04,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 100.0
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 0
+                            }
+                        ]
                     }
                 ]
             }
@@ -247,52 +512,152 @@
                     {
                         "lower_bound": -0.01,
                         "upper_bound": 1.0,
-                        "percent": 14.48
+                        "percent": 14.48,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 76.99757869249395
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 23.002421307506054
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 1.0,
                         "upper_bound": 2.0,
-                        "percent": 10.48
+                        "percent": 10.48,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 77.58454106280193
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 22.415458937198068
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 2.0,
                         "upper_bound": 3.0,
-                        "percent": 10.09
+                        "percent": 10.09,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 80.82061068702289
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 19.1793893129771
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 3.0,
                         "upper_bound": 4.0,
-                        "percent": 9.89
+                        "percent": 9.89,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 78.88999008919723
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 21.110009910802773
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 4.0,
                         "upper_bound": 5.0,
-                        "percent": 10.12
+                        "percent": 10.12,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 79.474216380182
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 20.525783619817997
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 5.0,
                         "upper_bound": 6.0,
-                        "percent": 9.67
+                        "percent": 9.67,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 79.34782608695652
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 20.652173913043477
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 6.0,
                         "upper_bound": 7.0,
-                        "percent": 10.280000000000001
+                        "percent": 10.280000000000001,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 79.73112719751809
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 20.2688728024819
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 7.0,
                         "upper_bound": 8.0,
-                        "percent": 10.25
+                        "percent": 10.25,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 82.78210116731518
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 17.217898832684824
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 8.0,
                         "upper_bound": 9.0,
-                        "percent": 9.84
+                        "percent": 9.84,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 80.78048780487805
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 19.21951219512195
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 9.0,
                         "upper_bound": 10.0,
-                        "percent": 4.9
+                        "percent": 4.9,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 78.35365853658537
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 21.646341463414632
+                            }
+                        ]
                     }
                 ]
             }
@@ -335,52 +700,152 @@
                     {
                         "lower_bound": -250.89809,
                         "upper_bound": 25089.809,
-                        "percent": 36.230000000000004
+                        "percent": 36.230000000000004,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 86.08887662158432
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 13.911123378415677
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 25089.809,
                         "upper_bound": 50179.618,
-                        "percent": 0.69
+                        "percent": 0.69,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 68.11594202898551
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 31.88405797101449
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 50179.618,
                         "upper_bound": 75269.427,
-                        "percent": 3.5999999999999996
+                        "percent": 3.5999999999999996,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 77.77777777777779
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 22.22222222222222
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 75269.427,
                         "upper_bound": 100359.236,
-                        "percent": 11.73
+                        "percent": 11.73,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 80.73316283034954
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 19.26683716965047
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 100359.236,
                         "upper_bound": 125449.04500000001,
-                        "percent": 20.810000000000002
+                        "percent": 20.810000000000002,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 73.13791446419991
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 26.862085535800095
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 125449.04500000001,
                         "upper_bound": 150538.854,
-                        "percent": 17.47
+                        "percent": 17.47,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 75.50085861476818
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 24.499141385231827
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 150538.854,
                         "upper_bound": 175628.663,
-                        "percent": 7.290000000000001
+                        "percent": 7.290000000000001,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 78.60082304526749
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 21.39917695473251
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 175628.663,
                         "upper_bound": 200718.472,
-                        "percent": 1.8599999999999999
+                        "percent": 1.8599999999999999,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 76.88172043010752
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 23.118279569892472
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 200718.472,
                         "upper_bound": 225808.28100000002,
-                        "percent": 0.3
+                        "percent": 0.3,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 43.333333333333336
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 56.666666666666664
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 225808.28100000002,
                         "upper_bound": 250898.09,
-                        "percent": 0.02
+                        "percent": 0.02,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 0
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 100.0
+                            }
+                        ]
                     }
                 ]
             }
@@ -423,52 +888,152 @@
                     {
                         "lower_bound": 0.997,
                         "upper_bound": 1.3,
-                        "percent": 50.839999999999996
+                        "percent": 50.839999999999996,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 72.28560188827696
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 27.714398111723053
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 1.3,
                         "upper_bound": 1.6,
-                        "percent": 0.0
+                        "percent": 0.0,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 0
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 0
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 1.6,
                         "upper_bound": 1.9,
-                        "percent": 0.0
+                        "percent": 0.0,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 0
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 0
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 1.9,
                         "upper_bound": 2.2,
-                        "percent": 45.9
+                        "percent": 45.9,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 92.41830065359477
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 7.5816993464052285
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 2.2,
                         "upper_bound": 2.5,
-                        "percent": 0.0
+                        "percent": 0.0,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 0
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 0
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 2.5,
                         "upper_bound": 2.8,
-                        "percent": 0.0
+                        "percent": 0.0,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 0
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 0
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 2.8,
                         "upper_bound": 3.1,
-                        "percent": 2.6599999999999997
+                        "percent": 2.6599999999999997,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 17.293233082706767
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 82.70676691729322
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 3.1,
                         "upper_bound": 3.4,
-                        "percent": 0.0
+                        "percent": 0.0,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 0
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 0
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 3.4,
                         "upper_bound": 3.6999999999999997,
-                        "percent": 0.0
+                        "percent": 0.0,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 0
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 0
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 3.6999999999999997,
                         "upper_bound": 4.0,
-                        "percent": 0.6
+                        "percent": 0.6,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 0
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 0
+                            }
+                        ]
                     }
                 ]
             }
@@ -480,11 +1045,37 @@
             "num_missing": 0,
             "categorical_stats": {
                 "distinct_count": 2,
-                "top": 1,
-                "distribution": {
-                    "0": 29.45,
-                    "1": 70.55
-                }
+                "top": "1",
+                "distribution": [
+                    {
+                        "name": "0",
+                        "percent": 29.45,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 0
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "1",
+                        "percent": 70.55,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 0
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 0
+                            }
+                        ]
+                    }
+                ]
             }
         },
         {
@@ -494,11 +1085,37 @@
             "num_missing": 0,
             "categorical_stats": {
                 "distinct_count": 2,
-                "top": 1,
-                "distribution": {
-                    "0": 48.49,
-                    "1": 51.51
-                }
+                "top": "1",
+                "distribution": [
+                    {
+                        "name": "0",
+                        "percent": 48.49,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 0
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "1",
+                        "percent": 51.51,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 0
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 0
+                            }
+                        ]
+                    }
+                ]
             }
         },
         {
@@ -539,69 +1156,175 @@
                     {
                         "lower_bound": -188.4009,
                         "upper_bound": 20009.670000000006,
-                        "percent": 9.87
+                        "percent": 9.87,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 79.93920972644378
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 20.060790273556233
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 20009.670000000006,
                         "upper_bound": 40007.76000000001,
-                        "percent": 9.68
+                        "percent": 9.68,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 79.75206611570248
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 20.24793388429752
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 40007.76000000001,
                         "upper_bound": 60005.85000000001,
-                        "percent": 10.059999999999999
+                        "percent": 10.059999999999999,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 81.01391650099403
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 18.986083499005964
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 60005.85000000001,
                         "upper_bound": 80003.94000000002,
-                        "percent": 10.27
+                        "percent": 10.27,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 79.35735150925024
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 20.642648490749757
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 80003.94000000002,
                         "upper_bound": 100002.03000000001,
-                        "percent": 10.02
+                        "percent": 10.02,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 80.43912175648703
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 19.560878243512974
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 100002.03000000001,
                         "upper_bound": 120000.12000000002,
-                        "percent": 10.27
+                        "percent": 10.27,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 79.45472249269717
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 20.545277507302824
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 120000.12000000002,
                         "upper_bound": 139998.21000000002,
-                        "percent": 10.07
+                        "percent": 10.07,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 80.53624627606753
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 19.463753723932474
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 139998.21000000002,
                         "upper_bound": 159996.30000000002,
-                        "percent": 9.82
+                        "percent": 9.82,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 79.0224032586558
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 20.977596741344197
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 159996.30000000002,
                         "upper_bound": 179994.39,
-                        "percent": 10.09
+                        "percent": 10.09,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 77.70069375619426
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 22.29930624380575
+                            }
+                        ]
                     },
                     {
                         "lower_bound": 179994.39,
                         "upper_bound": 199992.48,
-                        "percent": 9.85
+                        "percent": 9.85,
+                        "by_class": [
+                            {
+                                "class_name": "0",
+                                "percent": 79.0650406504065
+                            },
+                            {
+                                "class_name": "1",
+                                "percent": 20.934959349593495
+                            }
+                        ]
                     }
                 ]
             }
-        },
-        {
-            "name": "Exited",
-            "data_type": "string",
-            "num_present": 10000,
-            "num_missing": 0,
-            "categorical_stats": {
-                "distinct_count": 2,
-                "top": 0,
-                "distribution": {
-                    "0": 79.63,
-                    "1": 20.369999999999997
-                }
-            }
         }
-    ]
+    ],
+    "target": {
+        "name": "Exited",
+        "data_type": "string",
+        "num_present": 10000,
+        "num_missing": 0,
+        "categorical_stats": {
+            "distinct_count": 2,
+            "top": "0",
+            "distribution": [
+                {
+                    "name": "0",
+                    "percent": 79.63
+                },
+                {
+                    "name": "1",
+                    "percent": 20.369999999999997
+                }
+            ]
+        }
+    }
 }

@@ -138,13 +138,13 @@ class DataBaselineStats:
             for target_dist in target_stats["numerical_stats"]["distribution"]:
                 target_lower_bound = target_dist["lower_bound"]
                 target_upper_bound = target_dist["upper_bound"]
-                temp_df2 = df[(df[target_column_name] >= target_lower_bound) & (
+                temp_df = df[(df[target_column_name] >= target_lower_bound) & (
                         df[feature_column_name] < target_upper_bound)]
 
                 _dist_by_class.append({
                     "lower_bound": target_lower_bound,
                     "upper_bound": target_upper_bound,
-                    "percent": (len(temp_df2) / len(df)) * 100
+                    "percent": (len(temp_df) / len(df)) * 100
                 })
         else:
             value_counts = df[target_column_name].value_counts(normalize=True, sort=False).to_dict()
