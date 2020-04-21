@@ -1,7 +1,7 @@
 import json
 import os
 from typing import Dict
-
+import copy
 import numpy as np
 import pandas as pd
 
@@ -162,9 +162,11 @@ class DataBaselineStats:
 
     @classmethod
     def get_feature_distribution_by_target(cls, df: pd.DataFrame, target_column_name: str, baseline_stats: Dict):
-        target_stats = baseline_stats["target"]
+        _baseline_stats = copy.deepcopy(baseline_stats)
 
-        for feature in baseline_stats["features"]:
+        target_stats = _baseline_stats["target"]
+
+        for feature in _baseline_stats["features"]:
             column_name = feature["name"]
             _df = df[[column_name, target_column_name]]
 
@@ -199,6 +201,8 @@ class DataBaselineStats:
                     )
 
                     dist["by_class"] = dist_by_class
+
+        return _baseline_stats
 
     @classmethod
     def get_stats(cls, df: pd.DataFrame, target_column_name: str, output_path: str = None):
@@ -244,7 +248,7 @@ class DataBaselineStats:
         }
 
         # Get feature value distribution by target values
-        cls.get_feature_distribution_by_target(
+        baseline_stats = cls.get_feature_distribution_by_target(
             df=df,
             target_column_name=target_column_name,
             baseline_stats=baseline_stats
