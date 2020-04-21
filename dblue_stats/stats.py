@@ -119,19 +119,20 @@ class DataBaselineStats:
 
         stats = {
             "distinct_count": distinct_count,
-            "top": _top,
+            "top": str(_top),
             "distribution": value_counts
         }
 
         return stats
 
     @classmethod
-    def get_stats(cls, df: pd.DataFrame, output_path: str = None):
+    def get_stats(cls, df: pd.DataFrame, target_column_name: str, output_path: str = None):
 
         # Get number of rows in the DataFrame
         record_count = cls.get_record_count(df=df)
 
         features = []
+        target = None
 
         for column_name in df.columns:
             column = df[column_name]
@@ -153,7 +154,10 @@ class DataBaselineStats:
             elif data_type == "string":
                 item["categorical_stats"] = cls.get_categorical_stats(column=column)
 
-            features.append(item)
+            if column_name == target_column_name:
+                target = item
+            else:
+                features.append(item)
 
         baseline_stats = {
             "version": "py-{}".format(VERSION),
@@ -161,6 +165,7 @@ class DataBaselineStats:
                 "item_count": record_count,
             },
             "features": features,
+            "target": target,
         }
 
         # Save output in a file
@@ -170,29 +175,29 @@ class DataBaselineStats:
         return baseline_stats
 
     @classmethod
-    def from_pandas(cls, df: pd.DataFrame, output_path: str = None):
+    def from_pandas(cls, df: pd.DataFrame, target_column_name: str, output_path: str = None):
         if df is None or df.empty:
             raise DblueDataStatsException("Pandas DataFrame can't be empty")
 
-        return cls.get_stats(df=df, output_path=output_path)
+        return cls.get_stats(df=df, target_column_name=target_column_name, output_path=output_path)
 
     @classmethod
-    def from_csv(cls, uri, output_path: str = None):
+    def from_csv(cls, uri, target_column_name: str, output_path: str = None):
         if not os.path.exists(uri):
             raise DblueDataStatsException("CSV file not found at %s", uri)
 
         df = pd.read_csv(uri)
 
-        return cls.get_stats(df=df, output_path=output_path)
+        return cls.get_stats(df=df, target_column_name=target_column_name, output_path=output_path)
 
     @classmethod
-    def from_parquet(cls, uri, output_path: str = None):
+    def from_parquet(cls, uri, target_column_name: str, output_path: str = None):
         if not os.path.exists(uri):
             raise DblueDataStatsException("Parquet file not found at %s", uri)
 
         df = pd.read_parquet(uri, engine="fastparquet")
 
-        return cls.get_stats(df=df, output_path=output_path)
+        return cls.get_stats(df=df, target_column_name=target_column_name, output_path=output_path)
 
     @classmethod
     def save_stats_output(cls, stats: Dict, output_path: str):
