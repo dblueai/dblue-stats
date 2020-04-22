@@ -24,14 +24,20 @@ class DataBaselineStats:
         return len(df.index)
 
     @classmethod
-    def infer_data_type(cls, column: pd.Series):
+    def get_standard_data_type(cls, data_type):
         types = {
             "int64": "integer",
             "float64": "number",
             "object": "string",
+            "bool": "boolean",
         }
 
-        data_type = types.get(column.dtype.name)
+        return types.get(data_type)
+
+    @classmethod
+    def infer_data_type(cls, column: pd.Series):
+
+        data_type = cls.get_standard_data_type(column.dtype.name)
 
         if not data_type:
             raise DblueDataStatsException("Data type not found: %s" % column.dtype.name)
@@ -39,7 +45,7 @@ class DataBaselineStats:
         distinct_values = column.unique()
         is_bool = len(set(distinct_values) - {0, 1}) == 0
 
-        if is_bool:
+        if is_bool or data_type == "boolean":
             data_type = "string"
 
         return data_type
@@ -147,7 +153,7 @@ class DataBaselineStats:
                 _dist_by_class.append({
                     "lower_bound": target_lower_bound,
                     "upper_bound": target_upper_bound,
-                    "relative_percent": ((dist_percent/100) * absolute_percent) * 100,
+                    "relative_percent": ((dist_percent / 100) * absolute_percent) * 100,
                     "absolute_percent": absolute_percent * 100
                 })
         else:
@@ -160,7 +166,7 @@ class DataBaselineStats:
                 absolute_percent = value_counts.get(target_class["name"], 0)
                 _dist_by_class.append({
                     "class_name": target_class["name"],
-                    "relative_percent": ((dist_percent/100) * absolute_percent) * 100,
+                    "relative_percent": ((dist_percent / 100) * absolute_percent) * 100,
                     "absolute_percent": absolute_percent * 100
                 })
 
@@ -199,7 +205,14 @@ class DataBaselineStats:
                 distribution = feature["categorical_stats"]["distribution"]
 
                 for dist in distribution:
-                    temp_df = _df[_df[column_name] == dist["name"]]
+                    # Handling boolean
+                    std_data_type = cls.get_standard_data_type(_df[column_name].dtype.name)
+                    dist_name = dist["name"]
+
+                    if std_data_type == "integer":
+                        dist_name = int(dist_name)
+
+                    temp_df = _df[_df[column_name] == dist_name]
                     percent = dist["percent"]
 
                     dist_by_class = cls.get_dist_by_class(
