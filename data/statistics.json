@@ -46,11 +46,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             },
                             {
                                 "class_name": "1",
-                                "percent": 100.0
+                                "relative_percent": 0.19,
+                                "absolute_percent": 100.0
                             }
                         ]
                     },
@@ -61,11 +63,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 74.69879518072288
+                                "relative_percent": 1.2698795180722893,
+                                "absolute_percent": 74.69879518072288
                             },
                             {
                                 "class_name": "1",
-                                "percent": 25.301204819277107
+                                "relative_percent": 0.43012048192771085,
+                                "absolute_percent": 25.301204819277107
                             }
                         ]
                     },
@@ -76,11 +80,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 80.08948545861297
+                                "relative_percent": 3.636062639821029,
+                                "absolute_percent": 80.08948545861297
                             },
                             {
                                 "class_name": "1",
-                                "percent": 19.910514541387027
+                                "relative_percent": 0.903937360178971,
+                                "absolute_percent": 19.910514541387027
                             }
                         ]
                     },
@@ -91,11 +97,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 77.97494780793319
+                                "relative_percent": 7.625949895615866,
+                                "absolute_percent": 77.97494780793319
                             },
                             {
                                 "class_name": "1",
-                                "percent": 22.025052192066806
+                                "relative_percent": 2.154050104384133,
+                                "absolute_percent": 22.025052192066806
                             }
                         ]
                     },
@@ -106,11 +114,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 79.29362880886427
+                                "relative_percent": 11.457929362880886,
+                                "absolute_percent": 79.29362880886427
                             },
                             {
                                 "class_name": "1",
-                                "percent": 20.706371191135734
+                                "relative_percent": 2.992070637119113,
+                                "absolute_percent": 20.706371191135734
                             }
                         ]
                     },
@@ -121,11 +131,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 79.15326902465166
+                                "relative_percent": 14.809576634512322,
+                                "absolute_percent": 79.15326902465166
                             },
                             {
                                 "class_name": "1",
-                                "percent": 20.846730975348336
+                                "relative_percent": 3.900423365487673,
+                                "absolute_percent": 20.846730975348336
                             }
                         ]
                     },
@@ -136,11 +148,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 81.35245901639344
+                                "relative_percent": 15.839323770491804,
+                                "absolute_percent": 81.35245901639344
                             },
                             {
                                 "class_name": "1",
-                                "percent": 18.647540983606557
+                                "relative_percent": 3.630676229508197,
+                                "absolute_percent": 18.647540983606557
                             }
                         ]
                     },
@@ -151,11 +165,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 80.1311475409836
+                                "relative_percent": 12.16390819672131,
+                                "absolute_percent": 80.1311475409836
                             },
                             {
                                 "class_name": "1",
-                                "percent": 19.86885245901639
+                                "relative_percent": 3.0160918032786883,
+                                "absolute_percent": 19.86885245901639
                             }
                         ]
                     },
@@ -166,11 +182,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 80.06198347107438
+                                "relative_percent": 7.629907024793388,
+                                "absolute_percent": 80.06198347107438
                             },
                             {
                                 "class_name": "1",
-                                "percent": 19.93801652892562
+                                "relative_percent": 1.9000929752066114,
+                                "absolute_percent": 19.93801652892562
                             }
                         ]
                     },
@@ -181,11 +199,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 79.85781990521326
+                                "relative_percent": 5.150829383886256,
+                                "absolute_percent": 79.85781990521326
                             },
                             {
                                 "class_name": "1",
-                                "percent": 20.14218009478673
+                                "relative_percent": 1.299170616113744,
+                                "absolute_percent": 20.14218009478673
                             }
                         ]
                     }
@@ -207,11 +227,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 83.84523334662943
+                                "relative_percent": 42.03999999999999,
+                                "absolute_percent": 83.84523334662943
                             },
                             {
                                 "class_name": "1",
-                                "percent": 16.15476665337056
+                                "relative_percent": 8.1,
+                                "absolute_percent": 16.15476665337056
                             }
                         ]
                     },
@@ -221,11 +243,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 67.55679553607014
+                                "relative_percent": 16.950000000000003,
+                                "absolute_percent": 67.55679553607014
                             },
                             {
                                 "class_name": "1",
-                                "percent": 32.44320446392985
+                                "relative_percent": 8.14,
+                                "absolute_percent": 32.44320446392985
                             }
                         ]
                     },
@@ -235,11 +259,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 83.3266047638272
+                                "relative_percent": 20.64,
+                                "absolute_percent": 83.3266047638272
                             },
                             {
                                 "class_name": "1",
-                                "percent": 16.673395236172787
+                                "relative_percent": 4.13,
+                                "absolute_percent": 16.673395236172787
                             }
                         ]
                     }
@@ -261,11 +287,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 83.54407183434121
+                                "relative_percent": 45.589999999999996,
+                                "absolute_percent": 83.54407183434121
                             },
                             {
                                 "class_name": "1",
-                                "percent": 16.455928165658786
+                                "relative_percent": 8.979999999999999,
+                                "absolute_percent": 16.455928165658786
                             }
                         ]
                     },
@@ -275,11 +303,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 74.92846136913933
+                                "relative_percent": 34.04,
+                                "absolute_percent": 74.92846136913933
                             },
                             {
                                 "class_name": "1",
-                                "percent": 25.071538630860662
+                                "relative_percent": 11.389999999999999,
+                                "absolute_percent": 25.071538630860662
                             }
                         ]
                     }
@@ -328,11 +358,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 92.47135842880525
+                                "relative_percent": 5.65,
+                                "absolute_percent": 92.47135842880525
                             },
                             {
                                 "class_name": "1",
-                                "percent": 7.528641571194762
+                                "relative_percent": 0.45999999999999996,
+                                "absolute_percent": 7.528641571194762
                             }
                         ]
                     },
@@ -343,11 +375,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 92.33593391463974
+                                "relative_percent": 20.120000000000005,
+                                "absolute_percent": 92.33593391463974
                             },
                             {
                                 "class_name": "1",
-                                "percent": 7.664066085360258
+                                "relative_percent": 1.6700000000000004,
+                                "absolute_percent": 7.664066085360258
                             }
                         ]
                     },
@@ -358,11 +392,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 86.96610636538992
+                                "relative_percent": 31.56,
+                                "absolute_percent": 86.96610636538992
                             },
                             {
                                 "class_name": "1",
-                                "percent": 13.033893634610086
+                                "relative_percent": 4.73,
+                                "absolute_percent": 13.033893634610086
                             }
                         ]
                     },
@@ -373,11 +409,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 69.96258685195083
+                                "relative_percent": 13.089999999999996,
+                                "absolute_percent": 69.96258685195083
                             },
                             {
                                 "class_name": "1",
-                                "percent": 30.03741314804917
+                                "relative_percent": 5.619999999999998,
+                                "absolute_percent": 30.03741314804917
                             }
                         ]
                     },
@@ -388,11 +426,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 46.01449275362319
+                                "relative_percent": 4.187318840579709,
+                                "absolute_percent": 46.01449275362319
                             },
                             {
                                 "class_name": "1",
-                                "percent": 53.985507246376805
+                                "relative_percent": 4.9126811594202895,
+                                "absolute_percent": 53.985507246376805
                             }
                         ]
                     },
@@ -403,11 +443,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 48.565965583174
+                                "relative_percent": 2.1417590822179733,
+                                "absolute_percent": 48.565965583174
                             },
                             {
                                 "class_name": "1",
-                                "percent": 51.434034416826
+                                "relative_percent": 2.2682409177820264,
+                                "absolute_percent": 51.434034416826
                             }
                         ]
                     },
@@ -418,11 +460,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 72.11538461538461
+                                "relative_percent": 1.5,
+                                "absolute_percent": 72.11538461538461
                             },
                             {
                                 "class_name": "1",
-                                "percent": 27.884615384615387
+                                "relative_percent": 0.58,
+                                "absolute_percent": 27.884615384615387
                             }
                         ]
                     },
@@ -433,11 +477,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 88.9763779527559
+                                "relative_percent": 1.13,
+                                "absolute_percent": 88.9763779527559
                             },
                             {
                                 "class_name": "1",
-                                "percent": 11.023622047244094
+                                "relative_percent": 0.13999999999999999,
+                                "absolute_percent": 11.023622047244094
                             }
                         ]
                     },
@@ -448,11 +494,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 95.0
+                                "relative_percent": 0.19,
+                                "absolute_percent": 95.0
                             },
                             {
                                 "class_name": "1",
-                                "percent": 5.0
+                                "relative_percent": 0.01,
+                                "absolute_percent": 5.0
                             }
                         ]
                     },
@@ -463,11 +511,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 100.0
+                                "relative_percent": 0.04,
+                                "absolute_percent": 100.0
                             },
                             {
                                 "class_name": "1",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             }
                         ]
                     }
@@ -516,11 +566,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 76.99757869249395
+                                "relative_percent": 11.149249394673125,
+                                "absolute_percent": 76.99757869249395
                             },
                             {
                                 "class_name": "1",
-                                "percent": 23.002421307506054
+                                "relative_percent": 3.330750605326877,
+                                "absolute_percent": 23.002421307506054
                             }
                         ]
                     },
@@ -531,11 +583,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 77.58454106280193
+                                "relative_percent": 8.130859903381642,
+                                "absolute_percent": 77.58454106280193
                             },
                             {
                                 "class_name": "1",
-                                "percent": 22.415458937198068
+                                "relative_percent": 2.3491400966183575,
+                                "absolute_percent": 22.415458937198068
                             }
                         ]
                     },
@@ -546,11 +600,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 80.82061068702289
+                                "relative_percent": 8.15479961832061,
+                                "absolute_percent": 80.82061068702289
                             },
                             {
                                 "class_name": "1",
-                                "percent": 19.1793893129771
+                                "relative_percent": 1.9352003816793892,
+                                "absolute_percent": 19.1793893129771
                             }
                         ]
                     },
@@ -561,11 +617,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 78.88999008919723
+                                "relative_percent": 7.802220019821606,
+                                "absolute_percent": 78.88999008919723
                             },
                             {
                                 "class_name": "1",
-                                "percent": 21.110009910802773
+                                "relative_percent": 2.0877799801783943,
+                                "absolute_percent": 21.110009910802773
                             }
                         ]
                     },
@@ -576,11 +634,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 79.474216380182
+                                "relative_percent": 8.04279069767442,
+                                "absolute_percent": 79.474216380182
                             },
                             {
                                 "class_name": "1",
-                                "percent": 20.525783619817997
+                                "relative_percent": 2.0772093023255813,
+                                "absolute_percent": 20.525783619817997
                             }
                         ]
                     },
@@ -591,11 +651,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 79.34782608695652
+                                "relative_percent": 7.672934782608695,
+                                "absolute_percent": 79.34782608695652
                             },
                             {
                                 "class_name": "1",
-                                "percent": 20.652173913043477
+                                "relative_percent": 1.9970652173913042,
+                                "absolute_percent": 20.652173913043477
                             }
                         ]
                     },
@@ -606,11 +668,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 79.73112719751809
+                                "relative_percent": 8.19635987590486,
+                                "absolute_percent": 79.73112719751809
                             },
                             {
                                 "class_name": "1",
-                                "percent": 20.2688728024819
+                                "relative_percent": 2.08364012409514,
+                                "absolute_percent": 20.2688728024819
                             }
                         ]
                     },
@@ -621,11 +685,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 82.78210116731518
+                                "relative_percent": 8.485165369649804,
+                                "absolute_percent": 82.78210116731518
                             },
                             {
                                 "class_name": "1",
-                                "percent": 17.217898832684824
+                                "relative_percent": 1.7648346303501945,
+                                "absolute_percent": 17.217898832684824
                             }
                         ]
                     },
@@ -636,11 +702,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 80.78048780487805
+                                "relative_percent": 7.9488,
+                                "absolute_percent": 80.78048780487805
                             },
                             {
                                 "class_name": "1",
-                                "percent": 19.21951219512195
+                                "relative_percent": 1.8912000000000002,
+                                "absolute_percent": 19.21951219512195
                             }
                         ]
                     },
@@ -651,11 +719,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 78.35365853658537
+                                "relative_percent": 3.8393292682926834,
+                                "absolute_percent": 78.35365853658537
                             },
                             {
                                 "class_name": "1",
-                                "percent": 21.646341463414632
+                                "relative_percent": 1.0606707317073172,
+                                "absolute_percent": 21.646341463414632
                             }
                         ]
                     }
@@ -704,11 +774,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 86.08887662158432
+                                "relative_percent": 31.190000000000005,
+                                "absolute_percent": 86.08887662158432
                             },
                             {
                                 "class_name": "1",
-                                "percent": 13.911123378415677
+                                "relative_percent": 5.040000000000001,
+                                "absolute_percent": 13.911123378415677
                             }
                         ]
                     },
@@ -719,11 +791,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 68.11594202898551
+                                "relative_percent": 0.47000000000000003,
+                                "absolute_percent": 68.11594202898551
                             },
                             {
                                 "class_name": "1",
-                                "percent": 31.88405797101449
+                                "relative_percent": 0.21999999999999997,
+                                "absolute_percent": 31.88405797101449
                             }
                         ]
                     },
@@ -734,11 +808,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 77.77777777777779
+                                "relative_percent": 2.8,
+                                "absolute_percent": 77.77777777777779
                             },
                             {
                                 "class_name": "1",
-                                "percent": 22.22222222222222
+                                "relative_percent": 0.7999999999999998,
+                                "absolute_percent": 22.22222222222222
                             }
                         ]
                     },
@@ -749,11 +825,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 80.73316283034954
+                                "relative_percent": 9.47,
+                                "absolute_percent": 80.73316283034954
                             },
                             {
                                 "class_name": "1",
-                                "percent": 19.26683716965047
+                                "relative_percent": 2.2600000000000002,
+                                "absolute_percent": 19.26683716965047
                             }
                         ]
                     },
@@ -764,11 +842,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 73.13791446419991
+                                "relative_percent": 15.220000000000002,
+                                "absolute_percent": 73.13791446419991
                             },
                             {
                                 "class_name": "1",
-                                "percent": 26.862085535800095
+                                "relative_percent": 5.590000000000001,
+                                "absolute_percent": 26.862085535800095
                             }
                         ]
                     },
@@ -779,11 +859,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 75.50085861476818
+                                "relative_percent": 13.19,
+                                "absolute_percent": 75.50085861476818
                             },
                             {
                                 "class_name": "1",
-                                "percent": 24.499141385231827
+                                "relative_percent": 4.279999999999999,
+                                "absolute_percent": 24.499141385231827
                             }
                         ]
                     },
@@ -794,11 +876,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 78.60082304526749
+                                "relative_percent": 5.73,
+                                "absolute_percent": 78.60082304526749
                             },
                             {
                                 "class_name": "1",
-                                "percent": 21.39917695473251
+                                "relative_percent": 1.56,
+                                "absolute_percent": 21.39917695473251
                             }
                         ]
                     },
@@ -809,11 +893,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 76.88172043010752
+                                "relative_percent": 1.43,
+                                "absolute_percent": 76.88172043010752
                             },
                             {
                                 "class_name": "1",
-                                "percent": 23.118279569892472
+                                "relative_percent": 0.42999999999999994,
+                                "absolute_percent": 23.118279569892472
                             }
                         ]
                     },
@@ -824,11 +910,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 43.333333333333336
+                                "relative_percent": 0.13,
+                                "absolute_percent": 43.333333333333336
                             },
                             {
                                 "class_name": "1",
-                                "percent": 56.666666666666664
+                                "relative_percent": 0.16999999999999998,
+                                "absolute_percent": 56.666666666666664
                             }
                         ]
                     },
@@ -839,11 +927,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             },
                             {
                                 "class_name": "1",
-                                "percent": 100.0
+                                "relative_percent": 0.02,
+                                "absolute_percent": 100.0
                             }
                         ]
                     }
@@ -892,11 +982,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 72.28560188827696
+                                "relative_percent": 36.75,
+                                "absolute_percent": 72.28560188827696
                             },
                             {
                                 "class_name": "1",
-                                "percent": 27.714398111723053
+                                "relative_percent": 14.09,
+                                "absolute_percent": 27.714398111723053
                             }
                         ]
                     },
@@ -907,11 +999,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             },
                             {
                                 "class_name": "1",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             }
                         ]
                     },
@@ -922,11 +1016,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             },
                             {
                                 "class_name": "1",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             }
                         ]
                     },
@@ -937,11 +1033,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 92.41830065359477
+                                "relative_percent": 42.419999999999995,
+                                "absolute_percent": 92.41830065359477
                             },
                             {
                                 "class_name": "1",
-                                "percent": 7.5816993464052285
+                                "relative_percent": 3.4799999999999995,
+                                "absolute_percent": 7.5816993464052285
                             }
                         ]
                     },
@@ -952,11 +1050,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             },
                             {
                                 "class_name": "1",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             }
                         ]
                     },
@@ -967,11 +1067,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             },
                             {
                                 "class_name": "1",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             }
                         ]
                     },
@@ -982,11 +1084,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 17.293233082706767
+                                "relative_percent": 0.45999999999999996,
+                                "absolute_percent": 17.293233082706767
                             },
                             {
                                 "class_name": "1",
-                                "percent": 82.70676691729322
+                                "relative_percent": 2.1999999999999997,
+                                "absolute_percent": 82.70676691729322
                             }
                         ]
                     },
@@ -997,11 +1101,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             },
                             {
                                 "class_name": "1",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             }
                         ]
                     },
@@ -1012,11 +1118,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             },
                             {
                                 "class_name": "1",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             }
                         ]
                     },
@@ -1027,11 +1135,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             },
                             {
                                 "class_name": "1",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             }
                         ]
                     }
@@ -1053,11 +1163,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             },
                             {
                                 "class_name": "1",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             }
                         ]
                     },
@@ -1067,11 +1179,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             },
                             {
                                 "class_name": "1",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             }
                         ]
                     }
@@ -1093,11 +1207,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             },
                             {
                                 "class_name": "1",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             }
                         ]
                     },
@@ -1107,11 +1223,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             },
                             {
                                 "class_name": "1",
-                                "percent": 0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0
                             }
                         ]
                     }
@@ -1160,11 +1278,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 79.93920972644378
+                                "relative_percent": 7.89,
+                                "absolute_percent": 79.93920972644378
                             },
                             {
                                 "class_name": "1",
-                                "percent": 20.060790273556233
+                                "relative_percent": 1.9799999999999998,
+                                "absolute_percent": 20.060790273556233
                             }
                         ]
                     },
@@ -1175,11 +1295,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 79.75206611570248
+                                "relative_percent": 7.720000000000001,
+                                "absolute_percent": 79.75206611570248
                             },
                             {
                                 "class_name": "1",
-                                "percent": 20.24793388429752
+                                "relative_percent": 1.96,
+                                "absolute_percent": 20.24793388429752
                             }
                         ]
                     },
@@ -1190,11 +1312,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 81.01391650099403
+                                "relative_percent": 8.149999999999997,
+                                "absolute_percent": 81.01391650099403
                             },
                             {
                                 "class_name": "1",
-                                "percent": 18.986083499005964
+                                "relative_percent": 1.91,
+                                "absolute_percent": 18.986083499005964
                             }
                         ]
                     },
@@ -1205,11 +1329,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 79.35735150925024
+                                "relative_percent": 8.15,
+                                "absolute_percent": 79.35735150925024
                             },
                             {
                                 "class_name": "1",
-                                "percent": 20.642648490749757
+                                "relative_percent": 2.12,
+                                "absolute_percent": 20.642648490749757
                             }
                         ]
                     },
@@ -1220,11 +1346,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 80.43912175648703
+                                "relative_percent": 8.06,
+                                "absolute_percent": 80.43912175648703
                             },
                             {
                                 "class_name": "1",
-                                "percent": 19.560878243512974
+                                "relative_percent": 1.96,
+                                "absolute_percent": 19.560878243512974
                             }
                         ]
                     },
@@ -1235,11 +1363,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 79.45472249269717
+                                "relative_percent": 8.159999999999998,
+                                "absolute_percent": 79.45472249269717
                             },
                             {
                                 "class_name": "1",
-                                "percent": 20.545277507302824
+                                "relative_percent": 2.11,
+                                "absolute_percent": 20.545277507302824
                             }
                         ]
                     },
@@ -1250,11 +1380,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 80.53624627606753
+                                "relative_percent": 8.11,
+                                "absolute_percent": 80.53624627606753
                             },
                             {
                                 "class_name": "1",
-                                "percent": 19.463753723932474
+                                "relative_percent": 1.96,
+                                "absolute_percent": 19.463753723932474
                             }
                         ]
                     },
@@ -1265,11 +1397,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 79.0224032586558
+                                "relative_percent": 7.76,
+                                "absolute_percent": 79.0224032586558
                             },
                             {
                                 "class_name": "1",
-                                "percent": 20.977596741344197
+                                "relative_percent": 2.06,
+                                "absolute_percent": 20.977596741344197
                             }
                         ]
                     },
@@ -1280,11 +1414,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 77.70069375619426
+                                "relative_percent": 7.84,
+                                "absolute_percent": 77.70069375619426
                             },
                             {
                                 "class_name": "1",
-                                "percent": 22.29930624380575
+                                "relative_percent": 2.25,
+                                "absolute_percent": 22.29930624380575
                             }
                         ]
                     },
@@ -1295,11 +1431,13 @@
                         "by_class": [
                             {
                                 "class_name": "0",
-                                "percent": 79.0650406504065
+                                "relative_percent": 7.78790650406504,
+                                "absolute_percent": 79.0650406504065
                             },
                             {
                                 "class_name": "1",
-                                "percent": 20.934959349593495
+                                "relative_percent": 2.062093495934959,
+                                "absolute_percent": 20.934959349593495
                             }
                         ]
                     }

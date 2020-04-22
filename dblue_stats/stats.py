@@ -130,7 +130,8 @@ class DataBaselineStats:
         return stats
 
     @classmethod
-    def get_dist_by_class(cls, df: pd.DataFrame, target_stats: Dict, feature_column_name, target_column_name):
+    def get_dist_by_class(cls, df: pd.DataFrame, dist_percent, target_stats: Dict, feature_column_name,
+                          target_column_name):
 
         _dist_by_class = []
 
@@ -141,10 +142,13 @@ class DataBaselineStats:
                 temp_df = df[(df[target_column_name] >= target_lower_bound) & (
                         df[feature_column_name] < target_upper_bound)]
 
+                absolute_percent = len(temp_df) / len(df)
+
                 _dist_by_class.append({
                     "lower_bound": target_lower_bound,
                     "upper_bound": target_upper_bound,
-                    "percent": (len(temp_df) / len(df)) * 100
+                    "relative_percent": ((dist_percent/100) * absolute_percent) * 100,
+                    "absolute_percent": absolute_percent * 100
                 })
         else:
             value_counts = df[target_column_name].value_counts(normalize=True).to_dict()
@@ -153,9 +157,11 @@ class DataBaselineStats:
             value_counts = {str(k): v for k, v in value_counts.items()}
 
             for target_class in target_stats["categorical_stats"]["distribution"]:
+                absolute_percent = value_counts.get(target_class["name"], 0)
                 _dist_by_class.append({
                     "class_name": target_class["name"],
-                    "percent": value_counts.get(target_class["name"], 0) * 100
+                    "relative_percent": ((dist_percent/100) * absolute_percent) * 100,
+                    "absolute_percent": absolute_percent * 100
                 })
 
         return _dist_by_class
@@ -176,11 +182,13 @@ class DataBaselineStats:
                 for dist in distribution:
                     lower_bound = dist["lower_bound"]
                     upper_bound = dist["upper_bound"]
+                    percent = dist["percent"]
 
                     temp_df = _df[(_df[column_name] >= lower_bound) & (_df[column_name] < upper_bound)]
 
                     dist_by_class = cls.get_dist_by_class(
                         df=temp_df,
+                        dist_percent=percent,
                         target_stats=target_stats,
                         feature_column_name=column_name,
                         target_column_name=target_column_name
@@ -192,9 +200,11 @@ class DataBaselineStats:
 
                 for dist in distribution:
                     temp_df = _df[_df[column_name] == dist["name"]]
+                    percent = dist["percent"]
 
                     dist_by_class = cls.get_dist_by_class(
                         df=temp_df,
+                        dist_percent=percent,
                         target_stats=target_stats,
                         feature_column_name=column_name,
                         target_column_name=target_column_name
