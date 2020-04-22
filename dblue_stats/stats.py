@@ -211,6 +211,8 @@ class DataBaselineStats:
 
                     if std_data_type == "integer":
                         dist_name = int(dist_name)
+                    elif std_data_type == "boolean":
+                        dist_name = True if dist_name.lower() == "true" else False
 
                     temp_df = _df[_df[column_name] == dist_name]
                     percent = dist["percent"]
