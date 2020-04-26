@@ -146,9 +146,9 @@ class DataBaselineStats:
                 target_lower_bound = target_dist["lower_bound"]
                 target_upper_bound = target_dist["upper_bound"]
                 temp_df = df[(df[target_column_name] >= target_lower_bound) & (
-                        df[feature_column_name] < target_upper_bound)]
+                        df[target_column_name] < target_upper_bound)]
 
-                absolute_percent = len(temp_df) / len(df)
+                absolute_percent = len(temp_df) / len(df) if not df.empty else 0
 
                 _dist_by_class.append({
                     "lower_bound": target_lower_bound,
