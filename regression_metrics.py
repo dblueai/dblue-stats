@@ -34,6 +34,7 @@ def main():
     predictions = [x["prediction"] for x in data]
     targets = [x["targetValue"] for x in data]
 
+    metrics["prediction_count"] = len(data)
     metrics["max_error"] = max_error(y_true=targets, y_pred=predictions)
     metrics["mean_absolute_error"] = mean_absolute_error(y_true=targets, y_pred=predictions)
     metrics["mean_squared_error"] = mean_squared_error(y_true=targets, y_pred=predictions)
@@ -46,8 +47,9 @@ def main():
     metrics["mean_tweedie_deviance"] = mean_tweedie_deviance(y_true=targets, y_pred=predictions)
 
     data_by_date = get_data_by_date(data)
+
     metrics_by_date = []
-    for date, logs in data_by_date.items():
+    for date, logs in sorted(data_by_date.items(), key=lambda x: x[0]):
         _metrics = {}
         _predictions = [x["prediction"] for x in logs]
         _targets = [x["targetValue"] for x in logs]

@@ -73,6 +73,7 @@ def main():
     targets = [x["targetValue"] for x in data]
     probabilities = [x["probability"] for x in data]
 
+    metrics["prediction_count"] = len(data)
     metrics["accuracy"] = get_accuracy(targets=targets, predictions=predictions) * 100
     metrics["log_loss"] = get_log_loss(targets=targets, probabilities=probabilities)
     metrics["precision"] = get_precision(targets=targets, predictions=predictions)
@@ -88,7 +89,7 @@ def main():
 
     data_by_date = get_data_by_date(data)
     metrics_by_date = []
-    for date, logs in data_by_date.items():
+    for date, logs in sorted(data_by_date.items(), key=lambda x: x[0]):
         _metrics = {}
         _predictions = [x["prediction"] for x in logs]
         _targets = [x["targetValue"] for x in logs]
