@@ -136,8 +136,7 @@ class DataBaselineStats:
         return stats
 
     @classmethod
-    def get_dist_by_class(cls, df: pd.DataFrame, dist_percent, target_stats: Dict, feature_column_name,
-                          target_column_name):
+    def get_dist_by_class(cls, df: pd.DataFrame, dist_percent, target_stats: Dict, target_column_name):
 
         _dist_by_class = []
 
@@ -196,7 +195,6 @@ class DataBaselineStats:
                         df=temp_df,
                         dist_percent=percent,
                         target_stats=target_stats,
-                        feature_column_name=column_name,
                         target_column_name=target_column_name
                     )
 
@@ -221,7 +219,6 @@ class DataBaselineStats:
                         df=temp_df,
                         dist_percent=percent,
                         target_stats=target_stats,
-                        feature_column_name=column_name,
                         target_column_name=target_column_name
                     )
 
@@ -230,7 +227,7 @@ class DataBaselineStats:
         return _baseline_stats
 
     @classmethod
-    def get_stats(cls, df: pd.DataFrame, target_column_name: str, output_path: str = None):
+    def get_stats(cls, df: pd.DataFrame, target_column_name: str = None, output_path: str = None):
 
         # Get number of rows in the DataFrame
         record_count = cls.get_record_count(df=df)
@@ -273,11 +270,12 @@ class DataBaselineStats:
         }
 
         # Get feature value distribution by target values
-        baseline_stats = cls.get_feature_distribution_by_target(
-            df=df,
-            target_column_name=target_column_name,
-            baseline_stats=baseline_stats
-        )
+        if target_column_name:
+            baseline_stats = cls.get_feature_distribution_by_target(
+                df=df,
+                target_column_name=target_column_name,
+                baseline_stats=baseline_stats
+            )
 
         # Save output in a file
         if output_path:
@@ -286,14 +284,14 @@ class DataBaselineStats:
         return baseline_stats
 
     @classmethod
-    def from_pandas(cls, df: pd.DataFrame, target_column_name: str, output_path: str = None):
+    def from_pandas(cls, df: pd.DataFrame, target_column_name: str = None, output_path: str = None):
         if df is None or df.empty:
             raise DblueDataStatsException("Pandas DataFrame can't be empty")
 
         return cls.get_stats(df=df, target_column_name=target_column_name, output_path=output_path)
 
     @classmethod
-    def from_csv(cls, uri, target_column_name: str, output_path: str = None):
+    def from_csv(cls, uri, target_column_name: str = None, output_path: str = None):
         if not os.path.exists(uri):
             raise DblueDataStatsException("CSV file not found at %s", uri)
 
@@ -302,7 +300,7 @@ class DataBaselineStats:
         return cls.get_stats(df=df, target_column_name=target_column_name, output_path=output_path)
 
     @classmethod
-    def from_parquet(cls, uri, target_column_name: str, output_path: str = None):
+    def from_parquet(cls, uri, target_column_name: str = None, output_path: str = None):
         if not os.path.exists(uri):
             raise DblueDataStatsException("Parquet file not found at %s", uri)
 
