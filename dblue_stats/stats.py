@@ -5,6 +5,7 @@ from typing import Dict
 
 import numpy as np
 import pandas as pd
+from slugify import slugify
 
 from dblue_stats.exceptions import DblueDataStatsException
 from dblue_stats.version import VERSION
@@ -243,7 +244,8 @@ class DataBaselineStats:
             num_present = record_count - num_missing
 
             item = {
-                "name": column_name,
+                "name": slugify(column_name, separator="_"),
+                "display_name": column_name,
                 "data_type": data_type,
                 "num_present": num_present,
                 "num_missing": num_missing,
