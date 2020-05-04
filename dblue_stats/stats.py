@@ -179,7 +179,7 @@ class DataBaselineStats:
         target_stats = _baseline_stats["target"]
 
         for feature in _baseline_stats["features"]:
-            column_name = feature["name"]
+            column_name = feature["display_name"]
             _df = df[[column_name, target_column_name]]
 
             if feature["data_type"] in ["integer", "number"]:
