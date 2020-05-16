@@ -12,37 +12,40 @@ from dblue_stats.exceptions import DblueStatsException
 class JSONSchema:
 
     @classmethod
-    def from_pandas(cls, df: pd.DataFrame, output_path: str = None):
+    def from_pandas(cls, df: pd.DataFrame, target_column_name: str = None, output_path: str = None):
         if df is None or df.empty:
             raise DblueStatsException("Pandas DataFrame can't be empty")
 
-        return cls.get_schema(df=df, output_path=output_path)
+        return cls.get_schema(df=df, target_column_name=target_column_name, output_path=output_path)
 
     @classmethod
-    def from_csv(cls, uri: str, output_path: str = None):
+    def from_csv(cls, uri: str, target_column_name: str = None, output_path: str = None):
         if not os.path.exists(uri):
             raise DblueStatsException("CSV file not found at %s", uri)
 
         df = pd.read_csv(uri)
 
-        return cls.get_schema(df=df, output_path=output_path)
+        return cls.get_schema(df=df, target_column_name=target_column_name, output_path=output_path)
 
     @classmethod
-    def from_parquet(cls, uri: str, output_path: str = None):
+    def from_parquet(cls, uri: str, target_column_name: str = None, output_path: str = None):
         if not os.path.exists(uri):
             raise DblueStatsException("Parquet file not found at %s", uri)
 
         df = pd.read_parquet(uri, engine="fastparquet")
 
-        return cls.get_schema(df=df, output_path=output_path)
+        return cls.get_schema(df=df, target_column_name=target_column_name, output_path=output_path)
 
     @classmethod
-    def get_schema(cls, df: pd.DataFrame, output_path: str = None):
+    def get_schema(cls, df: pd.DataFrame, target_column_name: str = None, output_path: str = None):
         properties = {}
 
         for column_name in df.columns:
             column = df[column_name]
             field = cls.get_field_property(column=column)
+
+            field["meta"]["is_target"] = column_name == target_column_name
+
             properties[slugify(column_name, separator="_")] = field
 
         schema = {

@@ -1,0 +1,128 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Dblue MLWatch - training dataset schema",
+    "type": "object",
+    "properties": {
+        "creditscore": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "CreditScore",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "geography": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "Geography",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "France",
+                "Spain",
+                "Germany"
+            ]
+        },
+        "gender": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "Gender",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Female",
+                "Male"
+            ]
+        },
+        "age": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "Age",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "tenure": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "Tenure",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "balance": {
+            "type": "number",
+            "nullable": false,
+            "meta": {
+                "display_name": "Balance",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "numofproducts": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "NumOfProducts",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "hascrcard": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "HasCrCard",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                1,
+                0
+            ]
+        },
+        "isactivemember": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "IsActiveMember",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                1,
+                0
+            ]
+        },
+        "estimatedsalary": {
+            "type": "number",
+            "nullable": false,
+            "meta": {
+                "display_name": "EstimatedSalary",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "exited": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "Exited",
+                "feature_type": "categorical",
+                "is_target": true
+            },
+            "allowed": [
+                1,
+                0
+            ]
+        }
+    },
+    "additionalProperties": false
+}
