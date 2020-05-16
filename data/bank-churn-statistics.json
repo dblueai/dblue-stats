@@ -8,6 +8,7 @@
             "name": "creditscore",
             "display_name": "CreditScore",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 10000,
             "num_missing": 0,
             "numerical_stats": {
@@ -217,6 +218,7 @@
             "name": "geography",
             "display_name": "Geography",
             "data_type": "string",
+            "feature_type": "categorical",
             "num_present": 10000,
             "num_missing": 0,
             "categorical_stats": {
@@ -278,6 +280,7 @@
             "name": "gender",
             "display_name": "Gender",
             "data_type": "string",
+            "feature_type": "categorical",
             "num_present": 10000,
             "num_missing": 0,
             "categorical_stats": {
@@ -323,6 +326,7 @@
             "name": "age",
             "display_name": "Age",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 10000,
             "num_missing": 0,
             "numerical_stats": {
@@ -532,6 +536,7 @@
             "name": "tenure",
             "display_name": "Tenure",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 10000,
             "num_missing": 0,
             "numerical_stats": {
@@ -741,6 +746,7 @@
             "name": "balance",
             "display_name": "Balance",
             "data_type": "number",
+            "feature_type": "numerical",
             "num_present": 10000,
             "num_missing": 0,
             "numerical_stats": {
@@ -950,6 +956,7 @@
             "name": "numofproducts",
             "display_name": "NumOfProducts",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 10000,
             "num_missing": 0,
             "numerical_stats": {
@@ -1158,7 +1165,8 @@
         {
             "name": "hascrcard",
             "display_name": "HasCrCard",
-            "data_type": "string",
+            "data_type": "integer",
+            "feature_type": "categorical",
             "num_present": 10000,
             "num_missing": 0,
             "categorical_stats": {
@@ -1203,7 +1211,8 @@
         {
             "name": "isactivemember",
             "display_name": "IsActiveMember",
-            "data_type": "string",
+            "data_type": "integer",
+            "feature_type": "categorical",
             "num_present": 10000,
             "num_missing": 0,
             "categorical_stats": {
@@ -1249,6 +1258,7 @@
             "name": "estimatedsalary",
             "display_name": "EstimatedSalary",
             "data_type": "number",
+            "feature_type": "numerical",
             "num_present": 10000,
             "num_missing": 0,
             "numerical_stats": {
@@ -1458,7 +1468,8 @@
     "target": {
         "name": "exited",
         "display_name": "Exited",
-        "data_type": "string",
+        "data_type": "integer",
+        "feature_type": "categorical",
         "num_present": 10000,
         "num_missing": 0,
         "categorical_stats": {
