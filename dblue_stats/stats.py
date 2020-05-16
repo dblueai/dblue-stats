@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 from slugify import slugify
 
-from dblue_stats.exceptions import DblueDataStatsException
+from dblue_stats.exceptions import DblueStatsException
 from dblue_stats.version import VERSION
 
 
@@ -41,7 +41,7 @@ class DataBaselineStats:
         data_type = cls.get_standard_data_type(column.dtype.name)
 
         if not data_type:
-            raise DblueDataStatsException("Data type not found: %s" % column.dtype.name)
+            raise DblueStatsException("Data type not found: %s" % column.dtype.name)
 
         distinct_values = column.unique()
         is_bool = len(set(distinct_values) - {0, 1}) == 0
@@ -288,14 +288,14 @@ class DataBaselineStats:
     @classmethod
     def from_pandas(cls, df: pd.DataFrame, target_column_name: str = None, output_path: str = None):
         if df is None or df.empty:
-            raise DblueDataStatsException("Pandas DataFrame can't be empty")
+            raise DblueStatsException("Pandas DataFrame can't be empty")
 
         return cls.get_stats(df=df, target_column_name=target_column_name, output_path=output_path)
 
     @classmethod
     def from_csv(cls, uri, target_column_name: str = None, output_path: str = None):
         if not os.path.exists(uri):
-            raise DblueDataStatsException("CSV file not found at %s", uri)
+            raise DblueStatsException("CSV file not found at %s", uri)
 
         df = pd.read_csv(uri)
 
@@ -304,7 +304,7 @@ class DataBaselineStats:
     @classmethod
     def from_parquet(cls, uri, target_column_name: str = None, output_path: str = None):
         if not os.path.exists(uri):
-            raise DblueDataStatsException("Parquet file not found at %s", uri)
+            raise DblueStatsException("Parquet file not found at %s", uri)
 
         df = pd.read_parquet(uri, engine="fastparquet")
 

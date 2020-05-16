@@ -1,2 +1,2 @@
-class DblueDataStatsException(Exception):
+class DblueStatsException(Exception):
     pass
