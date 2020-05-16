@@ -1,0 +1,657 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Dblue MLWatch - training dataset schema",
+    "type": "object",
+    "properties": {
+        "mssubclass": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "MSSubClass",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "mszoning": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "MSZoning",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "RL",
+                "RM",
+                "C (all)",
+                "FV",
+                "RH"
+            ]
+        },
+        "lotfrontage": {
+            "type": "number",
+            "nullable": true,
+            "meta": {
+                "display_name": "LotFrontage",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "lotarea": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "LotArea",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "neighborhood": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "Neighborhood",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "CollgCr",
+                "Veenker",
+                "Crawfor",
+                "NoRidge",
+                "Mitchel",
+                "Somerst",
+                "NWAmes",
+                "OldTown",
+                "BrkSide",
+                "Sawyer",
+                "NridgHt",
+                "NAmes",
+                "SawyerW",
+                "IDOTRR",
+                "MeadowV",
+                "Edwards",
+                "Timber",
+                "Gilbert",
+                "StoneBr",
+                "ClearCr",
+                "NPkVill",
+                "Blmngtn",
+                "BrDale",
+                "SWISU",
+                "Blueste"
+            ]
+        },
+        "overallqual": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "OverallQual",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "overallcond": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "OverallCond",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "yearbuilt": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "YearBuilt",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "yearremodadd": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "YearRemodAdd",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "exterior1st": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "Exterior1st",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "VinylSd",
+                "MetalSd",
+                "Wd Sdng",
+                "HdBoard",
+                "BrkFace",
+                "WdShing",
+                "CemntBd",
+                "Plywood",
+                "AsbShng",
+                "Stucco",
+                "BrkComm",
+                "AsphShn",
+                "Stone",
+                "ImStucc",
+                "CBlock"
+            ]
+        },
+        "exterior2nd": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "Exterior2nd",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "VinylSd",
+                "MetalSd",
+                "Wd Shng",
+                "HdBoard",
+                "Plywood",
+                "Wd Sdng",
+                "CmentBd",
+                "BrkFace",
+                "Stucco",
+                "AsbShng",
+                "Brk Cmn",
+                "ImStucc",
+                "AsphShn",
+                "Stone",
+                "Other",
+                "CBlock"
+            ]
+        },
+        "masvnrarea": {
+            "type": "number",
+            "nullable": true,
+            "meta": {
+                "display_name": "MasVnrArea",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "bsmtqual": {
+            "type": "string",
+            "nullable": true,
+            "meta": {
+                "display_name": "BsmtQual",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Gd",
+                "TA",
+                "Ex",
+                "Fa"
+            ]
+        },
+        "bsmtcond": {
+            "type": "string",
+            "nullable": true,
+            "meta": {
+                "display_name": "BsmtCond",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "TA",
+                "Gd",
+                "Fa",
+                "Po"
+            ]
+        },
+        "bsmtexposure": {
+            "type": "string",
+            "nullable": true,
+            "meta": {
+                "display_name": "BsmtExposure",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "No",
+                "Gd",
+                "Mn",
+                "Av"
+            ]
+        },
+        "bsmtfintype1": {
+            "type": "string",
+            "nullable": true,
+            "meta": {
+                "display_name": "BsmtFinType1",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "GLQ",
+                "ALQ",
+                "Unf",
+                "Rec",
+                "BLQ",
+                "LwQ"
+            ]
+        },
+        "bsmtfinsf1": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "BsmtFinSF1",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "bsmtfintype2": {
+            "type": "string",
+            "nullable": true,
+            "meta": {
+                "display_name": "BsmtFinType2",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Unf",
+                "BLQ",
+                "ALQ",
+                "Rec",
+                "LwQ",
+                "GLQ"
+            ]
+        },
+        "bsmtfinsf2": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "BsmtFinSF2",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "bsmtunfsf": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "BsmtUnfSF",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "totalbsmtsf": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "TotalBsmtSF",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "electrical": {
+            "type": "string",
+            "nullable": true,
+            "meta": {
+                "display_name": "Electrical",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "SBrkr",
+                "FuseF",
+                "FuseA",
+                "FuseP",
+                "Mix"
+            ]
+        },
+        "1stflrsf": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "1stFlrSF",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "2ndflrsf": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "2ndFlrSF",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "lowqualfinsf": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "LowQualFinSF",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "grlivarea": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "GrLivArea",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "bsmtfullbath": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "BsmtFullBath",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "bsmthalfbath": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "BsmtHalfBath",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "fullbath": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "FullBath",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "halfbath": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "HalfBath",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "bedroomabvgr": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "BedroomAbvGr",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "kitchenabvgr": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "KitchenAbvGr",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "kitchenqual": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "KitchenQual",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Gd",
+                "TA",
+                "Ex",
+                "Fa"
+            ]
+        },
+        "totrmsabvgrd": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "TotRmsAbvGrd",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "functional": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "Functional",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Typ",
+                "Min1",
+                "Maj1",
+                "Min2",
+                "Mod",
+                "Maj2",
+                "Sev"
+            ]
+        },
+        "fireplaces": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "Fireplaces",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "garagetype": {
+            "type": "string",
+            "nullable": true,
+            "meta": {
+                "display_name": "GarageType",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Attchd",
+                "Detchd",
+                "BuiltIn",
+                "CarPort",
+                "Basment",
+                "2Types"
+            ]
+        },
+        "garageyrblt": {
+            "type": "number",
+            "nullable": true,
+            "meta": {
+                "display_name": "GarageYrBlt",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "garagefinish": {
+            "type": "string",
+            "nullable": true,
+            "meta": {
+                "display_name": "GarageFinish",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "RFn",
+                "Unf",
+                "Fin"
+            ]
+        },
+        "garagecars": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "GarageCars",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "garagearea": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "GarageArea",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "garagequal": {
+            "type": "string",
+            "nullable": true,
+            "meta": {
+                "display_name": "GarageQual",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "TA",
+                "Fa",
+                "Gd",
+                "Ex",
+                "Po"
+            ]
+        },
+        "garagecond": {
+            "type": "string",
+            "nullable": true,
+            "meta": {
+                "display_name": "GarageCond",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "TA",
+                "Fa",
+                "Gd",
+                "Po",
+                "Ex"
+            ]
+        },
+        "wooddecksf": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "WoodDeckSF",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "openporchsf": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "OpenPorchSF",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "enclosedporch": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "EnclosedPorch",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "3ssnporch": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "3SsnPorch",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "screenporch": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "ScreenPorch",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "poolarea": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "PoolArea",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "miscval": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "MiscVal",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "mosold": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "MoSold",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "yrsold": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "YrSold",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "saletype": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "SaleType",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "WD",
+                "New",
+                "COD",
+                "ConLD",
+                "ConLI",
+                "CWD",
+                "ConLw",
+                "Con",
+                "Oth"
+            ]
+        },
+        "saleprice": {
+            "type": "integer",
+            "nullable": false,
+            "meta": {
+                "display_name": "SalePrice",
+                "feature_type": "numerical",
+                "is_target": true
+            }
+        }
+    },
+    "additionalProperties": false
+}

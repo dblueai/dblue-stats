@@ -5,8 +5,10 @@
     },
     "features": [
         {
-            "name": "MSSubClass",
+            "name": "mssubclass",
+            "display_name": "MSSubClass",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -713,8 +715,10 @@
             }
         },
         {
-            "name": "MSZoning",
+            "name": "mszoning",
+            "display_name": "MSZoning",
             "data_type": "string",
+            "feature_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -1055,8 +1059,10 @@
             }
         },
         {
-            "name": "LotFrontage",
+            "name": "lotfrontage",
+            "display_name": "LotFrontage",
             "data_type": "number",
+            "feature_type": "numerical",
             "num_present": 1201,
             "num_missing": 259,
             "numerical_stats": {
@@ -1763,8 +1769,10 @@
             }
         },
         {
-            "name": "LotArea",
+            "name": "lotarea",
+            "display_name": "LotArea",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -2471,8 +2479,10 @@
             }
         },
         {
-            "name": "Neighborhood",
+            "name": "neighborhood",
+            "display_name": "Neighborhood",
             "data_type": "string",
+            "feature_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -3734,32 +3744,32 @@
                         ]
                     },
                     {
-                        "name": "MeadowV",
+                        "name": "Blmngtn",
                         "percent": 1.1643835616438356,
                         "by_class": [
                             {
                                 "lower_bound": 34179.9,
                                 "upper_bound": 106910.0,
-                                "relative_percent": 0.8219178082191781,
-                                "absolute_percent": 70.58823529411765
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0.0
                             },
                             {
                                 "lower_bound": 106910.0,
                                 "upper_bound": 178920.0,
-                                "relative_percent": 0.34246575342465757,
-                                "absolute_percent": 29.411764705882355
+                                "relative_percent": 0.4794520547945206,
+                                "absolute_percent": 41.17647058823529
                             },
                             {
                                 "lower_bound": 178920.0,
                                 "upper_bound": 250930.0,
-                                "relative_percent": 0.0,
-                                "absolute_percent": 0.0
+                                "relative_percent": 0.6164383561643836,
+                                "absolute_percent": 52.94117647058824
                             },
                             {
                                 "lower_bound": 250930.0,
                                 "upper_bound": 322940.0,
-                                "relative_percent": 0.0,
-                                "absolute_percent": 0.0
+                                "relative_percent": 0.0684931506849315,
+                                "absolute_percent": 5.88235294117647
                             },
                             {
                                 "lower_bound": 322940.0,
@@ -3800,32 +3810,32 @@
                         ]
                     },
                     {
-                        "name": "Blmngtn",
+                        "name": "MeadowV",
                         "percent": 1.1643835616438356,
                         "by_class": [
                             {
                                 "lower_bound": 34179.9,
                                 "upper_bound": 106910.0,
-                                "relative_percent": 0.0,
-                                "absolute_percent": 0.0
+                                "relative_percent": 0.8219178082191781,
+                                "absolute_percent": 70.58823529411765
                             },
                             {
                                 "lower_bound": 106910.0,
                                 "upper_bound": 178920.0,
-                                "relative_percent": 0.4794520547945206,
-                                "absolute_percent": 41.17647058823529
+                                "relative_percent": 0.34246575342465757,
+                                "absolute_percent": 29.411764705882355
                             },
                             {
                                 "lower_bound": 178920.0,
                                 "upper_bound": 250930.0,
-                                "relative_percent": 0.6164383561643836,
-                                "absolute_percent": 52.94117647058824
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0.0
                             },
                             {
                                 "lower_bound": 250930.0,
                                 "upper_bound": 322940.0,
-                                "relative_percent": 0.0684931506849315,
-                                "absolute_percent": 5.88235294117647
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0.0
                             },
                             {
                                 "lower_bound": 322940.0,
@@ -4133,8 +4143,10 @@
             }
         },
         {
-            "name": "OverallQual",
+            "name": "overallqual",
+            "display_name": "OverallQual",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -4841,8 +4853,10 @@
             }
         },
         {
-            "name": "OverallCond",
+            "name": "overallcond",
+            "display_name": "OverallCond",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -5549,8 +5563,10 @@
             }
         },
         {
-            "name": "YearBuilt",
+            "name": "yearbuilt",
+            "display_name": "YearBuilt",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -6257,8 +6273,10 @@
             }
         },
         {
-            "name": "YearRemodAdd",
+            "name": "yearremodadd",
+            "display_name": "YearRemodAdd",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -6965,8 +6983,10 @@
             }
         },
         {
-            "name": "Exterior1st",
+            "name": "exterior1st",
+            "display_name": "Exterior1st",
             "data_type": "string",
+            "feature_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -7766,14 +7786,14 @@
                         ]
                     },
                     {
-                        "name": "CBlock",
+                        "name": "ImStucc",
                         "percent": 0.0684931506849315,
                         "by_class": [
                             {
                                 "lower_bound": 34179.9,
                                 "upper_bound": 106910.0,
-                                "relative_percent": 0.0684931506849315,
-                                "absolute_percent": 100.0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0.0
                             },
                             {
                                 "lower_bound": 106910.0,
@@ -7790,8 +7810,8 @@
                             {
                                 "lower_bound": 250930.0,
                                 "upper_bound": 322940.0,
-                                "relative_percent": 0.0,
-                                "absolute_percent": 0.0
+                                "relative_percent": 0.0684931506849315,
+                                "absolute_percent": 100.0
                             },
                             {
                                 "lower_bound": 322940.0,
@@ -7832,14 +7852,14 @@
                         ]
                     },
                     {
-                        "name": "ImStucc",
+                        "name": "CBlock",
                         "percent": 0.0684931506849315,
                         "by_class": [
                             {
                                 "lower_bound": 34179.9,
                                 "upper_bound": 106910.0,
-                                "relative_percent": 0.0,
-                                "absolute_percent": 0.0
+                                "relative_percent": 0.0684931506849315,
+                                "absolute_percent": 100.0
                             },
                             {
                                 "lower_bound": 106910.0,
@@ -7856,8 +7876,8 @@
                             {
                                 "lower_bound": 250930.0,
                                 "upper_bound": 322940.0,
-                                "relative_percent": 0.0684931506849315,
-                                "absolute_percent": 100.0
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0.0
                             },
                             {
                                 "lower_bound": 322940.0,
@@ -7967,8 +7987,10 @@
             }
         },
         {
-            "name": "Exterior2nd",
+            "name": "exterior2nd",
+            "display_name": "Exterior2nd",
             "data_type": "string",
+            "feature_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -8900,72 +8922,6 @@
                         ]
                     },
                     {
-                        "name": "CBlock",
-                        "percent": 0.0684931506849315,
-                        "by_class": [
-                            {
-                                "lower_bound": 34179.9,
-                                "upper_bound": 106910.0,
-                                "relative_percent": 0.0684931506849315,
-                                "absolute_percent": 100.0
-                            },
-                            {
-                                "lower_bound": 106910.0,
-                                "upper_bound": 178920.0,
-                                "relative_percent": 0.0,
-                                "absolute_percent": 0.0
-                            },
-                            {
-                                "lower_bound": 178920.0,
-                                "upper_bound": 250930.0,
-                                "relative_percent": 0.0,
-                                "absolute_percent": 0.0
-                            },
-                            {
-                                "lower_bound": 250930.0,
-                                "upper_bound": 322940.0,
-                                "relative_percent": 0.0,
-                                "absolute_percent": 0.0
-                            },
-                            {
-                                "lower_bound": 322940.0,
-                                "upper_bound": 394950.0,
-                                "relative_percent": 0.0,
-                                "absolute_percent": 0.0
-                            },
-                            {
-                                "lower_bound": 394950.0,
-                                "upper_bound": 466960.0,
-                                "relative_percent": 0.0,
-                                "absolute_percent": 0.0
-                            },
-                            {
-                                "lower_bound": 466960.0,
-                                "upper_bound": 538970.0,
-                                "relative_percent": 0.0,
-                                "absolute_percent": 0.0
-                            },
-                            {
-                                "lower_bound": 538970.0,
-                                "upper_bound": 610980.0,
-                                "relative_percent": 0.0,
-                                "absolute_percent": 0.0
-                            },
-                            {
-                                "lower_bound": 610980.0,
-                                "upper_bound": 682990.0,
-                                "relative_percent": 0.0,
-                                "absolute_percent": 0.0
-                            },
-                            {
-                                "lower_bound": 682990.0,
-                                "upper_bound": 755000.0,
-                                "relative_percent": 0.0,
-                                "absolute_percent": 0.0
-                            }
-                        ]
-                    },
-                    {
                         "name": "Other",
                         "percent": 0.0684931506849315,
                         "by_class": [
@@ -9030,13 +8986,81 @@
                                 "absolute_percent": 0.0
                             }
                         ]
+                    },
+                    {
+                        "name": "CBlock",
+                        "percent": 0.0684931506849315,
+                        "by_class": [
+                            {
+                                "lower_bound": 34179.9,
+                                "upper_bound": 106910.0,
+                                "relative_percent": 0.0684931506849315,
+                                "absolute_percent": 100.0
+                            },
+                            {
+                                "lower_bound": 106910.0,
+                                "upper_bound": 178920.0,
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0.0
+                            },
+                            {
+                                "lower_bound": 178920.0,
+                                "upper_bound": 250930.0,
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0.0
+                            },
+                            {
+                                "lower_bound": 250930.0,
+                                "upper_bound": 322940.0,
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0.0
+                            },
+                            {
+                                "lower_bound": 322940.0,
+                                "upper_bound": 394950.0,
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0.0
+                            },
+                            {
+                                "lower_bound": 394950.0,
+                                "upper_bound": 466960.0,
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0.0
+                            },
+                            {
+                                "lower_bound": 466960.0,
+                                "upper_bound": 538970.0,
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0.0
+                            },
+                            {
+                                "lower_bound": 538970.0,
+                                "upper_bound": 610980.0,
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0.0
+                            },
+                            {
+                                "lower_bound": 610980.0,
+                                "upper_bound": 682990.0,
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0.0
+                            },
+                            {
+                                "lower_bound": 682990.0,
+                                "upper_bound": 755000.0,
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0.0
+                            }
+                        ]
                     }
                 ]
             }
         },
         {
-            "name": "MasVnrArea",
+            "name": "masvnrarea",
+            "display_name": "MasVnrArea",
             "data_type": "number",
+            "feature_type": "numerical",
             "num_present": 1452,
             "num_missing": 8,
             "numerical_stats": {
@@ -9743,8 +9767,10 @@
             }
         },
         {
-            "name": "BsmtQual",
+            "name": "bsmtqual",
+            "display_name": "BsmtQual",
             "data_type": "string",
+            "feature_type": "categorical",
             "num_present": 1423,
             "num_missing": 37,
             "categorical_stats": {
@@ -10019,8 +10045,10 @@
             }
         },
         {
-            "name": "BsmtCond",
+            "name": "bsmtcond",
+            "display_name": "BsmtCond",
             "data_type": "string",
+            "feature_type": "categorical",
             "num_present": 1423,
             "num_missing": 37,
             "categorical_stats": {
@@ -10295,8 +10323,10 @@
             }
         },
         {
-            "name": "BsmtExposure",
+            "name": "bsmtexposure",
+            "display_name": "BsmtExposure",
             "data_type": "string",
+            "feature_type": "categorical",
             "num_present": 1422,
             "num_missing": 38,
             "categorical_stats": {
@@ -10571,8 +10601,10 @@
             }
         },
         {
-            "name": "BsmtFinType1",
+            "name": "bsmtfintype1",
+            "display_name": "BsmtFinType1",
             "data_type": "string",
+            "feature_type": "categorical",
             "num_present": 1423,
             "num_missing": 37,
             "categorical_stats": {
@@ -10979,8 +11011,10 @@
             }
         },
         {
-            "name": "BsmtFinSF1",
+            "name": "bsmtfinsf1",
+            "display_name": "BsmtFinSF1",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -11687,8 +11721,10 @@
             }
         },
         {
-            "name": "BsmtFinType2",
+            "name": "bsmtfintype2",
+            "display_name": "BsmtFinType2",
             "data_type": "string",
+            "feature_type": "categorical",
             "num_present": 1422,
             "num_missing": 38,
             "categorical_stats": {
@@ -12095,8 +12131,10 @@
             }
         },
         {
-            "name": "BsmtFinSF2",
+            "name": "bsmtfinsf2",
+            "display_name": "BsmtFinSF2",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -12803,8 +12841,10 @@
             }
         },
         {
-            "name": "BsmtUnfSF",
+            "name": "bsmtunfsf",
+            "display_name": "BsmtUnfSF",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -13511,8 +13551,10 @@
             }
         },
         {
-            "name": "TotalBsmtSF",
+            "name": "totalbsmtsf",
+            "display_name": "TotalBsmtSF",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -14219,8 +14261,10 @@
             }
         },
         {
-            "name": "Electrical",
+            "name": "electrical",
+            "display_name": "Electrical",
             "data_type": "string",
+            "feature_type": "categorical",
             "num_present": 1459,
             "num_missing": 1,
             "categorical_stats": {
@@ -14561,8 +14605,10 @@
             }
         },
         {
-            "name": "1stFlrSF",
+            "name": "1stflrsf",
+            "display_name": "1stFlrSF",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -15269,8 +15315,10 @@
             }
         },
         {
-            "name": "2ndFlrSF",
+            "name": "2ndflrsf",
+            "display_name": "2ndFlrSF",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -15977,8 +16025,10 @@
             }
         },
         {
-            "name": "LowQualFinSF",
+            "name": "lowqualfinsf",
+            "display_name": "LowQualFinSF",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -16685,8 +16735,10 @@
             }
         },
         {
-            "name": "GrLivArea",
+            "name": "grlivarea",
+            "display_name": "GrLivArea",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -17393,8 +17445,10 @@
             }
         },
         {
-            "name": "BsmtFullBath",
+            "name": "bsmtfullbath",
+            "display_name": "BsmtFullBath",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -18101,8 +18155,10 @@
             }
         },
         {
-            "name": "BsmtHalfBath",
+            "name": "bsmthalfbath",
+            "display_name": "BsmtHalfBath",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -18809,8 +18865,10 @@
             }
         },
         {
-            "name": "FullBath",
+            "name": "fullbath",
+            "display_name": "FullBath",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -19517,8 +19575,10 @@
             }
         },
         {
-            "name": "HalfBath",
+            "name": "halfbath",
+            "display_name": "HalfBath",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -20225,8 +20285,10 @@
             }
         },
         {
-            "name": "BedroomAbvGr",
+            "name": "bedroomabvgr",
+            "display_name": "BedroomAbvGr",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -20933,8 +20995,10 @@
             }
         },
         {
-            "name": "KitchenAbvGr",
+            "name": "kitchenabvgr",
+            "display_name": "KitchenAbvGr",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -21641,8 +21705,10 @@
             }
         },
         {
-            "name": "KitchenQual",
+            "name": "kitchenqual",
+            "display_name": "KitchenQual",
             "data_type": "string",
+            "feature_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -21917,8 +21983,10 @@
             }
         },
         {
-            "name": "TotRmsAbvGrd",
+            "name": "totrmsabvgrd",
+            "display_name": "TotRmsAbvGrd",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -22625,8 +22693,10 @@
             }
         },
         {
-            "name": "Functional",
+            "name": "functional",
+            "display_name": "Functional",
             "data_type": "string",
+            "feature_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -23099,8 +23169,10 @@
             }
         },
         {
-            "name": "Fireplaces",
+            "name": "fireplaces",
+            "display_name": "Fireplaces",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -23807,8 +23879,10 @@
             }
         },
         {
-            "name": "GarageType",
+            "name": "garagetype",
+            "display_name": "GarageType",
             "data_type": "string",
+            "feature_type": "categorical",
             "num_present": 1379,
             "num_missing": 81,
             "categorical_stats": {
@@ -24215,8 +24289,10 @@
             }
         },
         {
-            "name": "GarageYrBlt",
+            "name": "garageyrblt",
+            "display_name": "GarageYrBlt",
             "data_type": "number",
+            "feature_type": "numerical",
             "num_present": 1379,
             "num_missing": 81,
             "numerical_stats": {
@@ -24923,8 +24999,10 @@
             }
         },
         {
-            "name": "GarageFinish",
+            "name": "garagefinish",
+            "display_name": "GarageFinish",
             "data_type": "string",
+            "feature_type": "categorical",
             "num_present": 1379,
             "num_missing": 81,
             "categorical_stats": {
@@ -25133,8 +25211,10 @@
             }
         },
         {
-            "name": "GarageCars",
+            "name": "garagecars",
+            "display_name": "GarageCars",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -25841,8 +25921,10 @@
             }
         },
         {
-            "name": "GarageArea",
+            "name": "garagearea",
+            "display_name": "GarageArea",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -26549,8 +26631,10 @@
             }
         },
         {
-            "name": "GarageQual",
+            "name": "garagequal",
+            "display_name": "GarageQual",
             "data_type": "string",
+            "feature_type": "categorical",
             "num_present": 1379,
             "num_missing": 81,
             "categorical_stats": {
@@ -26891,8 +26975,10 @@
             }
         },
         {
-            "name": "GarageCond",
+            "name": "garagecond",
+            "display_name": "GarageCond",
             "data_type": "string",
+            "feature_type": "categorical",
             "num_present": 1379,
             "num_missing": 81,
             "categorical_stats": {
@@ -27233,8 +27319,10 @@
             }
         },
         {
-            "name": "WoodDeckSF",
+            "name": "wooddecksf",
+            "display_name": "WoodDeckSF",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -27941,8 +28029,10 @@
             }
         },
         {
-            "name": "OpenPorchSF",
+            "name": "openporchsf",
+            "display_name": "OpenPorchSF",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -28649,8 +28739,10 @@
             }
         },
         {
-            "name": "EnclosedPorch",
+            "name": "enclosedporch",
+            "display_name": "EnclosedPorch",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -29357,8 +29449,10 @@
             }
         },
         {
-            "name": "3SsnPorch",
+            "name": "3ssnporch",
+            "display_name": "3SsnPorch",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -30065,8 +30159,10 @@
             }
         },
         {
-            "name": "ScreenPorch",
+            "name": "screenporch",
+            "display_name": "ScreenPorch",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -30773,8 +30869,10 @@
             }
         },
         {
-            "name": "PoolArea",
+            "name": "poolarea",
+            "display_name": "PoolArea",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -31481,8 +31579,10 @@
             }
         },
         {
-            "name": "MiscVal",
+            "name": "miscval",
+            "display_name": "MiscVal",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -32189,8 +32289,10 @@
             }
         },
         {
-            "name": "MoSold",
+            "name": "mosold",
+            "display_name": "MoSold",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -32897,8 +32999,10 @@
             }
         },
         {
-            "name": "YrSold",
+            "name": "yrsold",
+            "display_name": "YrSold",
             "data_type": "integer",
+            "feature_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -33605,8 +33709,10 @@
             }
         },
         {
-            "name": "SaleType",
+            "name": "saletype",
+            "display_name": "SaleType",
             "data_type": "string",
+            "feature_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -33878,72 +33984,6 @@
                         ]
                     },
                     {
-                        "name": "ConLI",
-                        "percent": 0.3424657534246575,
-                        "by_class": [
-                            {
-                                "lower_bound": 34179.9,
-                                "upper_bound": 106910.0,
-                                "relative_percent": 0.0,
-                                "absolute_percent": 0.0
-                            },
-                            {
-                                "lower_bound": 106910.0,
-                                "upper_bound": 178920.0,
-                                "relative_percent": 0.2054794520547945,
-                                "absolute_percent": 60.0
-                            },
-                            {
-                                "lower_bound": 178920.0,
-                                "upper_bound": 250930.0,
-                                "relative_percent": 0.0684931506849315,
-                                "absolute_percent": 20.0
-                            },
-                            {
-                                "lower_bound": 250930.0,
-                                "upper_bound": 322940.0,
-                                "relative_percent": 0.0,
-                                "absolute_percent": 0.0
-                            },
-                            {
-                                "lower_bound": 322940.0,
-                                "upper_bound": 394950.0,
-                                "relative_percent": 0.0,
-                                "absolute_percent": 0.0
-                            },
-                            {
-                                "lower_bound": 394950.0,
-                                "upper_bound": 466960.0,
-                                "relative_percent": 0.0684931506849315,
-                                "absolute_percent": 20.0
-                            },
-                            {
-                                "lower_bound": 466960.0,
-                                "upper_bound": 538970.0,
-                                "relative_percent": 0.0,
-                                "absolute_percent": 0.0
-                            },
-                            {
-                                "lower_bound": 538970.0,
-                                "upper_bound": 610980.0,
-                                "relative_percent": 0.0,
-                                "absolute_percent": 0.0
-                            },
-                            {
-                                "lower_bound": 610980.0,
-                                "upper_bound": 682990.0,
-                                "relative_percent": 0.0,
-                                "absolute_percent": 0.0
-                            },
-                            {
-                                "lower_bound": 682990.0,
-                                "upper_bound": 755000.0,
-                                "relative_percent": 0.0,
-                                "absolute_percent": 0.0
-                            }
-                        ]
-                    },
-                    {
                         "name": "ConLw",
                         "percent": 0.3424657534246575,
                         "by_class": [
@@ -33982,6 +34022,72 @@
                                 "upper_bound": 466960.0,
                                 "relative_percent": 0.0,
                                 "absolute_percent": 0.0
+                            },
+                            {
+                                "lower_bound": 466960.0,
+                                "upper_bound": 538970.0,
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0.0
+                            },
+                            {
+                                "lower_bound": 538970.0,
+                                "upper_bound": 610980.0,
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0.0
+                            },
+                            {
+                                "lower_bound": 610980.0,
+                                "upper_bound": 682990.0,
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0.0
+                            },
+                            {
+                                "lower_bound": 682990.0,
+                                "upper_bound": 755000.0,
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0.0
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ConLI",
+                        "percent": 0.3424657534246575,
+                        "by_class": [
+                            {
+                                "lower_bound": 34179.9,
+                                "upper_bound": 106910.0,
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0.0
+                            },
+                            {
+                                "lower_bound": 106910.0,
+                                "upper_bound": 178920.0,
+                                "relative_percent": 0.2054794520547945,
+                                "absolute_percent": 60.0
+                            },
+                            {
+                                "lower_bound": 178920.0,
+                                "upper_bound": 250930.0,
+                                "relative_percent": 0.0684931506849315,
+                                "absolute_percent": 20.0
+                            },
+                            {
+                                "lower_bound": 250930.0,
+                                "upper_bound": 322940.0,
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0.0
+                            },
+                            {
+                                "lower_bound": 322940.0,
+                                "upper_bound": 394950.0,
+                                "relative_percent": 0.0,
+                                "absolute_percent": 0.0
+                            },
+                            {
+                                "lower_bound": 394950.0,
+                                "upper_bound": 466960.0,
+                                "relative_percent": 0.0684931506849315,
+                                "absolute_percent": 20.0
                             },
                             {
                                 "lower_bound": 466960.0,
@@ -34212,8 +34318,10 @@
         }
     ],
     "target": {
-        "name": "SalePrice",
+        "name": "saleprice",
+        "display_name": "SalePrice",
         "data_type": "integer",
+        "feature_type": "numerical",
         "num_present": 1460,
         "num_missing": 0,
         "numerical_stats": {

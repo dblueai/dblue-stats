@@ -9,11 +9,6 @@ schema_output_path = "data/bank-churn-schema.json"
 stats_output_path = "data/bank-churn-statistics.json"
 
 
-# data_file_path = 'data/house-price.csv'
-# target_column_name = "SalePrice"
-# output_path = "data/house-price-statistics.json"
-
-
 def main():
     # Schema
     schema = JSONSchema.from_csv(

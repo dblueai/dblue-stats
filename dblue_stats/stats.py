@@ -41,10 +41,6 @@ class DataBaselineStats:
 
     @classmethod
     def get_numerical_distribution(cls, column: pd.Series):
-        # distinct_values = column.unique()
-        # if len(distinct_values) <= 20:
-        #     return {}
-
         bin_size = 10
 
         labels = [str(x + 1) for x in range(bin_size)]

@@ -8,6 +8,7 @@
             "name": "vixchange",
             "display_name": "vixChange",
             "data_type": "number",
+            "feature_type": "numerical",
             "num_present": 553,
             "num_missing": 0,
             "numerical_stats": {
@@ -717,6 +718,7 @@
             "name": "netchange",
             "display_name": "netChange",
             "data_type": "number",
+            "feature_type": "numerical",
             "num_present": 553,
             "num_missing": 0,
             "numerical_stats": {
@@ -1426,6 +1428,7 @@
             "name": "prevchangenf",
             "display_name": "prevChangeNF",
             "data_type": "number",
+            "feature_type": "numerical",
             "num_present": 553,
             "num_missing": 0,
             "numerical_stats": {
@@ -2135,6 +2138,7 @@
             "name": "prevchangebnf",
             "display_name": "prevChangeBNF",
             "data_type": "number",
+            "feature_type": "numerical",
             "num_present": 553,
             "num_missing": 0,
             "numerical_stats": {
@@ -2844,6 +2848,7 @@
             "name": "nfoichange",
             "display_name": "NFOIChange",
             "data_type": "number",
+            "feature_type": "numerical",
             "num_present": 553,
             "num_missing": 0,
             "numerical_stats": {
@@ -3553,6 +3558,7 @@
             "name": "bnfoichange",
             "display_name": "BNFOIChange",
             "data_type": "number",
+            "feature_type": "numerical",
             "num_present": 553,
             "num_missing": 0,
             "numerical_stats": {
@@ -4262,6 +4268,7 @@
             "name": "basischange",
             "display_name": "basisChange",
             "data_type": "number",
+            "feature_type": "numerical",
             "num_present": 553,
             "num_missing": 0,
             "numerical_stats": {
@@ -4972,6 +4979,7 @@
         "name": "high",
         "display_name": "High",
         "data_type": "number",
+        "feature_type": "numerical",
         "num_present": 553,
         "num_missing": 0,
         "numerical_stats": {

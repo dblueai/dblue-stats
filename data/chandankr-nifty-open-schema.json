@@ -1,0 +1,80 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Dblue MLWatch - training dataset schema",
+    "type": "object",
+    "properties": {
+        "vixchange": {
+            "type": "number",
+            "nullable": false,
+            "meta": {
+                "display_name": "vixChange",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "netchange": {
+            "type": "number",
+            "nullable": false,
+            "meta": {
+                "display_name": "netChange",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "prevchangenf": {
+            "type": "number",
+            "nullable": false,
+            "meta": {
+                "display_name": "prevChangeNF",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "prevchangebnf": {
+            "type": "number",
+            "nullable": false,
+            "meta": {
+                "display_name": "prevChangeBNF",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "nfoichange": {
+            "type": "number",
+            "nullable": false,
+            "meta": {
+                "display_name": "NFOIChange",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "bnfoichange": {
+            "type": "number",
+            "nullable": false,
+            "meta": {
+                "display_name": "BNFOIChange",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "basischange": {
+            "type": "number",
+            "nullable": false,
+            "meta": {
+                "display_name": "basisChange",
+                "feature_type": "numerical",
+                "is_target": false
+            }
+        },
+        "open": {
+            "type": "number",
+            "nullable": false,
+            "meta": {
+                "display_name": "Open",
+                "feature_type": "numerical",
+                "is_target": true
+            }
+        }
+    },
+    "additionalProperties": false
+}
