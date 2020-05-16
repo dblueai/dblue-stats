@@ -91,7 +91,7 @@ class JSONSchema:
         nullable = int(column.isnull().sum()) > 0
 
         # Detect boolean
-        distinct_values = column.unique()
+        distinct_values = column.dropna().unique()
         is_bool = len(set(distinct_values) - {0, 1}) == 0
 
         if is_bool or data_type == "boolean":
