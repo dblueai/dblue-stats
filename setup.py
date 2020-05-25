@@ -44,7 +44,7 @@ PACKAGE_VERSION = version()
 setup(
     name=PACKAGE_NAME,
     version=PACKAGE_VERSION,
-    description='Dblue stats library for generating baseline statistics of ML features',
+    description="Dblue's stats library for generating baseline statistics of ML features",
     long_description=read_readme(),
     long_description_content_type="text/markdown",
     maintainer='Rajesh Hegde',
@@ -62,7 +62,7 @@ setup(
     keywords=[
         'dblue',
         'machine-learning',
-        'deep-learning',
+        'drift',
         'monitoring',
         'mlwatch',
         'statistics'
