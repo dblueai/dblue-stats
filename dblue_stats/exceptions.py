@@ -1,0 +1,2 @@
+class DblueStatsException(Exception):
+    pass
