@@ -8,7 +8,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "MSSubClass",
-                "feature_type": "numerical",
+                "feature_type": "categorical",
                 "is_target": false
             }
         },
@@ -46,6 +46,105 @@
                 "is_target": false
             }
         },
+        "street": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "Street",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Pave",
+                "Grvl"
+            ]
+        },
+        "alley": {
+            "type": "string",
+            "nullable": true,
+            "meta": {
+                "display_name": "Alley",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Grvl",
+                "Pave"
+            ]
+        },
+        "lotshape": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "LotShape",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Reg",
+                "IR1",
+                "IR2",
+                "IR3"
+            ]
+        },
+        "landcontour": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "LandContour",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Lvl",
+                "Bnk",
+                "Low",
+                "HLS"
+            ]
+        },
+        "utilities": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "Utilities",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "AllPub",
+                "NoSeWa"
+            ]
+        },
+        "lotconfig": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "LotConfig",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Inside",
+                "FR2",
+                "Corner",
+                "CulDSac",
+                "FR3"
+            ]
+        },
+        "landslope": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "LandSlope",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Gtl",
+                "Mod",
+                "Sev"
+            ]
+        },
         "neighborhood": {
             "type": "string",
             "nullable": false,
@@ -80,6 +179,80 @@
                 "BrDale",
                 "SWISU",
                 "Blueste"
+            ]
+        },
+        "condition1": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "Condition1",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Norm",
+                "Feedr",
+                "PosN",
+                "Artery",
+                "RRAe",
+                "RRNn",
+                "RRAn",
+                "PosA",
+                "RRNe"
+            ]
+        },
+        "condition2": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "Condition2",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Norm",
+                "Artery",
+                "RRNn",
+                "Feedr",
+                "PosN",
+                "PosA",
+                "RRAn",
+                "RRAe"
+            ]
+        },
+        "bldgtype": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "BldgType",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "1Fam",
+                "2fmCon",
+                "Duplex",
+                "TwnhsE",
+                "Twnhs"
+            ]
+        },
+        "housestyle": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "HouseStyle",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "2Story",
+                "1Story",
+                "1.5Fin",
+                "1.5Unf",
+                "SFoyer",
+                "SLvl",
+                "2.5Unf",
+                "2.5Fin"
             ]
         },
         "overallqual": {
@@ -117,6 +290,42 @@
                 "feature_type": "numerical",
                 "is_target": false
             }
+        },
+        "roofstyle": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "RoofStyle",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Gable",
+                "Hip",
+                "Gambrel",
+                "Mansard",
+                "Flat",
+                "Shed"
+            ]
+        },
+        "roofmatl": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "RoofMatl",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "CompShg",
+                "WdShngl",
+                "Metal",
+                "WdShake",
+                "Membran",
+                "Tar&Grv",
+                "Roll",
+                "ClyTile"
+            ]
         },
         "exterior1st": {
             "type": "string",
@@ -171,6 +380,21 @@
                 "CBlock"
             ]
         },
+        "masvnrtype": {
+            "type": "string",
+            "nullable": true,
+            "meta": {
+                "display_name": "MasVnrType",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "BrkFace",
+                "None",
+                "Stone",
+                "BrkCmn"
+            ]
+        },
         "masvnrarea": {
             "type": "number",
             "nullable": true,
@@ -179,6 +403,54 @@
                 "feature_type": "numerical",
                 "is_target": false
             }
+        },
+        "exterqual": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "ExterQual",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Gd",
+                "TA",
+                "Ex",
+                "Fa"
+            ]
+        },
+        "extercond": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "ExterCond",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "TA",
+                "Gd",
+                "Fa",
+                "Po",
+                "Ex"
+            ]
+        },
+        "foundation": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "Foundation",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "PConc",
+                "CBlock",
+                "BrkTil",
+                "Wood",
+                "Slab",
+                "Stone"
+            ]
         },
         "bsmtqual": {
             "type": "string",
@@ -294,6 +566,52 @@
                 "feature_type": "numerical",
                 "is_target": false
             }
+        },
+        "heating": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "Heating",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "GasA",
+                "GasW",
+                "Grav",
+                "Wall",
+                "OthW",
+                "Floor"
+            ]
+        },
+        "heatingqc": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "HeatingQC",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Ex",
+                "Gd",
+                "TA",
+                "Fa",
+                "Po"
+            ]
+        },
+        "centralair": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "CentralAir",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Y",
+                "N"
+            ]
         },
         "electrical": {
             "type": "string",
@@ -452,6 +770,22 @@
                 "is_target": false
             }
         },
+        "fireplacequ": {
+            "type": "string",
+            "nullable": true,
+            "meta": {
+                "display_name": "FireplaceQu",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "TA",
+                "Gd",
+                "Fa",
+                "Ex",
+                "Po"
+            ]
+        },
         "garagetype": {
             "type": "string",
             "nullable": true,
@@ -542,6 +876,20 @@
                 "Ex"
             ]
         },
+        "paveddrive": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "PavedDrive",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Y",
+                "N",
+                "P"
+            ]
+        },
         "wooddecksf": {
             "type": "integer",
             "nullable": false,
@@ -596,6 +944,50 @@
                 "is_target": false
             }
         },
+        "poolqc": {
+            "type": "string",
+            "nullable": true,
+            "meta": {
+                "display_name": "PoolQC",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Ex",
+                "Fa",
+                "Gd"
+            ]
+        },
+        "fence": {
+            "type": "string",
+            "nullable": true,
+            "meta": {
+                "display_name": "Fence",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "MnPrv",
+                "GdWo",
+                "GdPrv",
+                "MnWw"
+            ]
+        },
+        "miscfeature": {
+            "type": "string",
+            "nullable": true,
+            "meta": {
+                "display_name": "MiscFeature",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Shed",
+                "Gar2",
+                "Othr",
+                "TenC"
+            ]
+        },
         "miscval": {
             "type": "integer",
             "nullable": false,
@@ -610,7 +1002,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "MoSold",
-                "feature_type": "numerical",
+                "feature_type": "categorical",
                 "is_target": false
             }
         },
@@ -619,7 +1011,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "YrSold",
-                "feature_type": "numerical",
+                "feature_type": "categorical",
                 "is_target": false
             }
         },
@@ -641,6 +1033,23 @@
                 "ConLw",
                 "Con",
                 "Oth"
+            ]
+        },
+        "salecondition": {
+            "type": "string",
+            "nullable": false,
+            "meta": {
+                "display_name": "SaleCondition",
+                "feature_type": "categorical",
+                "is_target": false
+            },
+            "allowed": [
+                "Normal",
+                "Abnorml",
+                "Partial",
+                "AdjLand",
+                "Alloca",
+                "Family"
             ]
         },
         "saleprice": {
