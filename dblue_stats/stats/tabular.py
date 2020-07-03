@@ -111,7 +111,11 @@ class TabularDataStats:
         for k, v in value_counts.items():
             distribution.append({"name": str(k), "percent": v * 100})  # Normalize to 100
 
-        stats = {"distinct_count": distinct_count, "top": distribution[0]["name"], "distribution": distribution}
+        stats = {
+            "distinct_count": distinct_count,
+            "top": distribution[0]["name"] if distinct_count > 0 else None,
+            "distribution": distribution,
+        }
 
         return stats
 
