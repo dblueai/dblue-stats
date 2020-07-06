@@ -10,7 +10,6 @@ from dblue_stats.exceptions import DblueStatsException
 
 
 class JSONSchema:
-
     @classmethod
     def from_pandas(cls, df: pd.DataFrame, target_column_name: str = None, output_path: str = None):
         if df is None or df.empty:
@@ -21,7 +20,7 @@ class JSONSchema:
     @classmethod
     def from_csv(cls, uri: str, target_column_name: str = None, output_path: str = None):
         if not os.path.exists(uri):
-            raise DblueStatsException("CSV file not found at %s", uri)
+            raise DblueStatsException("CSV file not found at %s" % uri)
 
         df = pd.read_csv(uri)
 
@@ -30,7 +29,7 @@ class JSONSchema:
     @classmethod
     def from_parquet(cls, uri: str, target_column_name: str = None, output_path: str = None):
         if not os.path.exists(uri):
-            raise DblueStatsException("Parquet file not found at %s", uri)
+            raise DblueStatsException("Parquet file not found at %s" % uri)
 
         df = pd.read_parquet(uri, engine="fastparquet")
 
@@ -53,7 +52,7 @@ class JSONSchema:
             "description": "Dblue MLWatch - training dataset schema",
             "type": "object",
             "properties": properties,
-            "additionalProperties": False
+            "additionalProperties": False,
         }
 
         # Save output in a file
@@ -86,7 +85,7 @@ class JSONSchema:
     @classmethod
     def get_field_property(cls, column: pd.Series):
         data_type = cls.infer_data_type(column=column)
-        feature_type = cls.get_feature_type(data_type=data_type)
+        field_type = cls.get_field_type(data_type=data_type)
 
         nullable = int(column.isnull().sum()) > 0
 
@@ -95,30 +94,27 @@ class JSONSchema:
         is_bool = len(set(distinct_values) - {0, 1}) == 0
 
         if is_bool or data_type == "boolean":
-            feature_type = Constants.FEATURE_TYPE_CATEGORICAL
+            field_type = Constants.FIELD_TYPE_CATEGORICAL
 
         item = {
             "type": data_type,
             "nullable": nullable,
-            "meta": {
-                "display_name": column.name,
-                "feature_type": feature_type,
-            }
+            "meta": {"display_name": column.name, "field_type": field_type},
         }
 
-        if feature_type == Constants.FEATURE_TYPE_CATEGORICAL:
+        if field_type == Constants.FIELD_TYPE_CATEGORICAL:
             item["allowed"] = distinct_values.tolist()
 
         return item
 
     @staticmethod
-    def get_feature_type(data_type):
+    def get_field_type(data_type):
 
         types = {
-            "integer": Constants.FEATURE_TYPE_NUMERICAL,
-            "number": Constants.FEATURE_TYPE_NUMERICAL,
-            "string": Constants.FEATURE_TYPE_CATEGORICAL,
-            "boolean": Constants.FEATURE_TYPE_CATEGORICAL,
+            "integer": Constants.FIELD_TYPE_NUMERICAL,
+            "number": Constants.FIELD_TYPE_NUMERICAL,
+            "string": Constants.FIELD_TYPE_CATEGORICAL,
+            "boolean": Constants.FIELD_TYPE_CATEGORICAL,
         }
 
         return types.get(data_type)

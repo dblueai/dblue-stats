@@ -8,7 +8,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "CreditScore",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -17,7 +17,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "Geography",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -31,7 +31,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "Gender",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -44,7 +44,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "Age",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -53,7 +53,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "Tenure",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -62,7 +62,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "Balance",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -71,7 +71,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "NumOfProducts",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -80,7 +80,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "HasCrCard",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -93,7 +93,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "IsActiveMember",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -106,7 +106,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "EstimatedSalary",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -115,7 +115,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "Exited",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": true
             },
             "allowed": [
