@@ -8,7 +8,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "MSSubClass",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             }
         },
@@ -17,7 +17,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "MSZoning",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -33,7 +33,7 @@
             "nullable": true,
             "meta": {
                 "display_name": "LotFrontage",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -42,7 +42,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "LotArea",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -51,7 +51,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "Street",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -64,7 +64,7 @@
             "nullable": true,
             "meta": {
                 "display_name": "Alley",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -77,7 +77,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "LotShape",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -92,7 +92,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "LandContour",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -107,7 +107,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "Utilities",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -120,7 +120,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "LotConfig",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -136,7 +136,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "LandSlope",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -150,7 +150,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "Neighborhood",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -186,7 +186,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "Condition1",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -206,7 +206,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "Condition2",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -225,7 +225,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "BldgType",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -241,7 +241,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "HouseStyle",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -260,7 +260,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "OverallQual",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -269,7 +269,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "OverallCond",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -278,7 +278,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "YearBuilt",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -287,7 +287,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "YearRemodAdd",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -296,7 +296,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "RoofStyle",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -313,7 +313,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "RoofMatl",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -332,7 +332,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "Exterior1st",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -358,7 +358,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "Exterior2nd",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -385,7 +385,7 @@
             "nullable": true,
             "meta": {
                 "display_name": "MasVnrType",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -400,7 +400,7 @@
             "nullable": true,
             "meta": {
                 "display_name": "MasVnrArea",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -409,7 +409,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "ExterQual",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -424,7 +424,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "ExterCond",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -440,7 +440,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "Foundation",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -457,7 +457,7 @@
             "nullable": true,
             "meta": {
                 "display_name": "BsmtQual",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -472,7 +472,7 @@
             "nullable": true,
             "meta": {
                 "display_name": "BsmtCond",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -487,7 +487,7 @@
             "nullable": true,
             "meta": {
                 "display_name": "BsmtExposure",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -502,7 +502,7 @@
             "nullable": true,
             "meta": {
                 "display_name": "BsmtFinType1",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -519,7 +519,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "BsmtFinSF1",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -528,7 +528,7 @@
             "nullable": true,
             "meta": {
                 "display_name": "BsmtFinType2",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -545,7 +545,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "BsmtFinSF2",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -554,7 +554,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "BsmtUnfSF",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -563,7 +563,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "TotalBsmtSF",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -572,7 +572,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "Heating",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -589,7 +589,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "HeatingQC",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -605,7 +605,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "CentralAir",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -618,7 +618,7 @@
             "nullable": true,
             "meta": {
                 "display_name": "Electrical",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -634,7 +634,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "1stFlrSF",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -643,7 +643,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "2ndFlrSF",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -652,7 +652,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "LowQualFinSF",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -661,7 +661,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "GrLivArea",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -670,7 +670,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "BsmtFullBath",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -679,7 +679,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "BsmtHalfBath",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -688,7 +688,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "FullBath",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -697,7 +697,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "HalfBath",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -706,7 +706,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "BedroomAbvGr",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -715,7 +715,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "KitchenAbvGr",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -724,7 +724,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "KitchenQual",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -739,7 +739,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "TotRmsAbvGrd",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -748,7 +748,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "Functional",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -766,7 +766,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "Fireplaces",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -775,7 +775,7 @@
             "nullable": true,
             "meta": {
                 "display_name": "FireplaceQu",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -791,7 +791,7 @@
             "nullable": true,
             "meta": {
                 "display_name": "GarageType",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -808,7 +808,7 @@
             "nullable": true,
             "meta": {
                 "display_name": "GarageYrBlt",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -817,7 +817,7 @@
             "nullable": true,
             "meta": {
                 "display_name": "GarageFinish",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -831,7 +831,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "GarageCars",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -840,7 +840,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "GarageArea",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -849,7 +849,7 @@
             "nullable": true,
             "meta": {
                 "display_name": "GarageQual",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -865,7 +865,7 @@
             "nullable": true,
             "meta": {
                 "display_name": "GarageCond",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -881,7 +881,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "PavedDrive",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -895,7 +895,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "WoodDeckSF",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -904,7 +904,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "OpenPorchSF",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -913,7 +913,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "EnclosedPorch",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -922,7 +922,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "3SsnPorch",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -931,7 +931,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "ScreenPorch",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -940,7 +940,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "PoolArea",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -949,7 +949,7 @@
             "nullable": true,
             "meta": {
                 "display_name": "PoolQC",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -963,7 +963,7 @@
             "nullable": true,
             "meta": {
                 "display_name": "Fence",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -978,7 +978,7 @@
             "nullable": true,
             "meta": {
                 "display_name": "MiscFeature",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -993,7 +993,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "MiscVal",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -1002,7 +1002,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "MoSold",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             }
         },
@@ -1011,7 +1011,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "YrSold",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             }
         },
@@ -1020,7 +1020,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "SaleType",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -1040,7 +1040,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "SaleCondition",
-                "feature_type": "categorical",
+                "field_type": "categorical",
                 "is_target": false
             },
             "allowed": [
@@ -1057,7 +1057,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "SalePrice",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": true
             }
         }

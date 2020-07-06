@@ -124,7 +124,7 @@ class TabularDataStats:
 
         _dist_by_class = []
 
-        if target_stats["feature_type"] == Constants.FEATURE_TYPE_NUMERICAL:
+        if target_stats["field_type"] == Constants.FIELD_TYPE_NUMERICAL:
             for target_dist in target_stats["numerical_stats"]["distribution"]:
                 target_lower_bound = target_dist["lower_bound"]
                 target_upper_bound = target_dist["upper_bound"]
@@ -143,7 +143,7 @@ class TabularDataStats:
                     }
                 )
 
-        elif target_stats["feature_type"] == Constants.FEATURE_TYPE_CATEGORICAL:
+        elif target_stats["field_type"] == Constants.FIELD_TYPE_CATEGORICAL:
             value_counts = df[target_column_name].value_counts(normalize=True).to_dict()
 
             # Convert keys to string in case it's not already
@@ -171,7 +171,7 @@ class TabularDataStats:
             column_name = feature["display_name"]
             _df = df[[column_name, target_column_name]]
 
-            if feature["feature_type"] == Constants.FEATURE_TYPE_NUMERICAL:
+            if feature["field_type"] == Constants.FIELD_TYPE_NUMERICAL:
                 distribution = feature["numerical_stats"]["distribution"]
 
                 for dist in distribution:
@@ -189,7 +189,7 @@ class TabularDataStats:
                     )
 
                     dist["by_class"] = dist_by_class
-            elif feature["feature_type"] == Constants.FEATURE_TYPE_CATEGORICAL:
+            elif feature["field_type"] == Constants.FIELD_TYPE_CATEGORICAL:
                 distribution = feature["categorical_stats"]["distribution"]
 
                 for dist in distribution:
@@ -256,7 +256,7 @@ class TabularDataStats:
                 raise DblueStatsException("Column not found in the schema: %s" % column_name)
 
             data_type = column_schema.get("type")
-            feature_type = column_schema.get("meta", {}).get("feature_type")
+            field_type = column_schema.get("meta", {}).get("field_type")
 
             num_missing = cls.get_missing_count(column=column)
             num_present = record_count - num_missing
@@ -265,15 +265,15 @@ class TabularDataStats:
                 "name": column_slug,
                 "display_name": column_name,
                 "data_type": data_type,
-                "feature_type": feature_type,
+                "field_type": field_type,
                 "num_present": num_present,
                 "num_missing": num_missing,
             }
 
-            if feature_type == Constants.FEATURE_TYPE_NUMERICAL:
+            if field_type == Constants.FIELD_TYPE_NUMERICAL:
                 item["numerical_stats"] = cls.get_numerical_stats(column=column, column_baseline=column_baseline)
 
-            elif feature_type == Constants.FEATURE_TYPE_CATEGORICAL:
+            elif field_type == Constants.FIELD_TYPE_CATEGORICAL:
                 item["categorical_stats"] = cls.get_categorical_stats(column=column)
 
             if column_name == target_column_name:

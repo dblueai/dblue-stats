@@ -5,6 +5,6 @@ class Constants:
     DATA_TYPE_STRING = "string"
     DATA_TYPE_BOOLEAN = "boolean"
 
-    # Feature types
-    FEATURE_TYPE_CATEGORICAL = "categorical"
-    FEATURE_TYPE_NUMERICAL = "numerical"
+    # Field types
+    FIELD_TYPE_CATEGORICAL = "categorical"
+    FIELD_TYPE_NUMERICAL = "numerical"

@@ -8,7 +8,7 @@
             "name": "mssubclass",
             "display_name": "MSSubClass",
             "data_type": "integer",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -1012,7 +1012,7 @@
             "name": "mszoning",
             "display_name": "MSZoning",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -1356,7 +1356,7 @@
             "name": "lotfrontage",
             "display_name": "LotFrontage",
             "data_type": "number",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1201,
             "num_missing": 259,
             "numerical_stats": {
@@ -2066,7 +2066,7 @@
             "name": "lotarea",
             "display_name": "LotArea",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -2776,7 +2776,7 @@
             "name": "street",
             "display_name": "Street",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -2922,7 +2922,7 @@
             "name": "alley",
             "display_name": "Alley",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 91,
             "num_missing": 1369,
             "categorical_stats": {
@@ -3068,7 +3068,7 @@
             "name": "lotshape",
             "display_name": "LotShape",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -3346,7 +3346,7 @@
             "name": "landcontour",
             "display_name": "LandContour",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -3624,7 +3624,7 @@
             "name": "utilities",
             "display_name": "Utilities",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -3770,7 +3770,7 @@
             "name": "lotconfig",
             "display_name": "LotConfig",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -4114,7 +4114,7 @@
             "name": "landslope",
             "display_name": "LandSlope",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -4326,7 +4326,7 @@
             "name": "neighborhood",
             "display_name": "Neighborhood",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -5990,7 +5990,7 @@
             "name": "condition1",
             "display_name": "Condition1",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -6598,7 +6598,7 @@
             "name": "condition2",
             "display_name": "Condition2",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -7140,7 +7140,7 @@
             "name": "bldgtype",
             "display_name": "BldgType",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -7484,7 +7484,7 @@
             "name": "housestyle",
             "display_name": "HouseStyle",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -8026,7 +8026,7 @@
             "name": "overallqual",
             "display_name": "OverallQual",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -8736,7 +8736,7 @@
             "name": "overallcond",
             "display_name": "OverallCond",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -9446,7 +9446,7 @@
             "name": "yearbuilt",
             "display_name": "YearBuilt",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -10156,7 +10156,7 @@
             "name": "yearremodadd",
             "display_name": "YearRemodAdd",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -10866,7 +10866,7 @@
             "name": "roofstyle",
             "display_name": "RoofStyle",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -11276,7 +11276,7 @@
             "name": "roofmatl",
             "display_name": "RoofMatl",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -11818,7 +11818,7 @@
             "name": "exterior1st",
             "display_name": "Exterior1st",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -12822,7 +12822,7 @@
             "name": "exterior2nd",
             "display_name": "Exterior2nd",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -13892,7 +13892,7 @@
             "name": "masvnrtype",
             "display_name": "MasVnrType",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1452,
             "num_missing": 8,
             "categorical_stats": {
@@ -14170,7 +14170,7 @@
             "name": "masvnrarea",
             "display_name": "MasVnrArea",
             "data_type": "number",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1452,
             "num_missing": 8,
             "numerical_stats": {
@@ -14880,7 +14880,7 @@
             "name": "exterqual",
             "display_name": "ExterQual",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -15158,7 +15158,7 @@
             "name": "extercond",
             "display_name": "ExterCond",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -15502,7 +15502,7 @@
             "name": "foundation",
             "display_name": "Foundation",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -15912,7 +15912,7 @@
             "name": "bsmtqual",
             "display_name": "BsmtQual",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1423,
             "num_missing": 37,
             "categorical_stats": {
@@ -16190,7 +16190,7 @@
             "name": "bsmtcond",
             "display_name": "BsmtCond",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1423,
             "num_missing": 37,
             "categorical_stats": {
@@ -16468,7 +16468,7 @@
             "name": "bsmtexposure",
             "display_name": "BsmtExposure",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1422,
             "num_missing": 38,
             "categorical_stats": {
@@ -16746,7 +16746,7 @@
             "name": "bsmtfintype1",
             "display_name": "BsmtFinType1",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1423,
             "num_missing": 37,
             "categorical_stats": {
@@ -17156,7 +17156,7 @@
             "name": "bsmtfinsf1",
             "display_name": "BsmtFinSF1",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -17866,7 +17866,7 @@
             "name": "bsmtfintype2",
             "display_name": "BsmtFinType2",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1422,
             "num_missing": 38,
             "categorical_stats": {
@@ -18276,7 +18276,7 @@
             "name": "bsmtfinsf2",
             "display_name": "BsmtFinSF2",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -18986,7 +18986,7 @@
             "name": "bsmtunfsf",
             "display_name": "BsmtUnfSF",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -19696,7 +19696,7 @@
             "name": "totalbsmtsf",
             "display_name": "TotalBsmtSF",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -20406,7 +20406,7 @@
             "name": "heating",
             "display_name": "Heating",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -20816,7 +20816,7 @@
             "name": "heatingqc",
             "display_name": "HeatingQC",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -21160,7 +21160,7 @@
             "name": "centralair",
             "display_name": "CentralAir",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -21306,7 +21306,7 @@
             "name": "electrical",
             "display_name": "Electrical",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1459,
             "num_missing": 1,
             "categorical_stats": {
@@ -21650,7 +21650,7 @@
             "name": "1stflrsf",
             "display_name": "1stFlrSF",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -22360,7 +22360,7 @@
             "name": "2ndflrsf",
             "display_name": "2ndFlrSF",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -23070,7 +23070,7 @@
             "name": "lowqualfinsf",
             "display_name": "LowQualFinSF",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -23780,7 +23780,7 @@
             "name": "grlivarea",
             "display_name": "GrLivArea",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -24490,7 +24490,7 @@
             "name": "bsmtfullbath",
             "display_name": "BsmtFullBath",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -25200,7 +25200,7 @@
             "name": "bsmthalfbath",
             "display_name": "BsmtHalfBath",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -25910,7 +25910,7 @@
             "name": "fullbath",
             "display_name": "FullBath",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -26620,7 +26620,7 @@
             "name": "halfbath",
             "display_name": "HalfBath",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -27330,7 +27330,7 @@
             "name": "bedroomabvgr",
             "display_name": "BedroomAbvGr",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -28040,7 +28040,7 @@
             "name": "kitchenabvgr",
             "display_name": "KitchenAbvGr",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -28750,7 +28750,7 @@
             "name": "kitchenqual",
             "display_name": "KitchenQual",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -29028,7 +29028,7 @@
             "name": "totrmsabvgrd",
             "display_name": "TotRmsAbvGrd",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -29738,7 +29738,7 @@
             "name": "functional",
             "display_name": "Functional",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -30214,7 +30214,7 @@
             "name": "fireplaces",
             "display_name": "Fireplaces",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -30924,7 +30924,7 @@
             "name": "fireplacequ",
             "display_name": "FireplaceQu",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 770,
             "num_missing": 690,
             "categorical_stats": {
@@ -31268,7 +31268,7 @@
             "name": "garagetype",
             "display_name": "GarageType",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1379,
             "num_missing": 81,
             "categorical_stats": {
@@ -31678,7 +31678,7 @@
             "name": "garageyrblt",
             "display_name": "GarageYrBlt",
             "data_type": "number",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1379,
             "num_missing": 81,
             "numerical_stats": {
@@ -32388,7 +32388,7 @@
             "name": "garagefinish",
             "display_name": "GarageFinish",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1379,
             "num_missing": 81,
             "categorical_stats": {
@@ -32600,7 +32600,7 @@
             "name": "garagecars",
             "display_name": "GarageCars",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -33310,7 +33310,7 @@
             "name": "garagearea",
             "display_name": "GarageArea",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -34020,7 +34020,7 @@
             "name": "garagequal",
             "display_name": "GarageQual",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1379,
             "num_missing": 81,
             "categorical_stats": {
@@ -34364,7 +34364,7 @@
             "name": "garagecond",
             "display_name": "GarageCond",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1379,
             "num_missing": 81,
             "categorical_stats": {
@@ -34708,7 +34708,7 @@
             "name": "paveddrive",
             "display_name": "PavedDrive",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -34920,7 +34920,7 @@
             "name": "wooddecksf",
             "display_name": "WoodDeckSF",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -35630,7 +35630,7 @@
             "name": "openporchsf",
             "display_name": "OpenPorchSF",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -36340,7 +36340,7 @@
             "name": "enclosedporch",
             "display_name": "EnclosedPorch",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -37050,7 +37050,7 @@
             "name": "3ssnporch",
             "display_name": "3SsnPorch",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -37760,7 +37760,7 @@
             "name": "screenporch",
             "display_name": "ScreenPorch",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -38470,7 +38470,7 @@
             "name": "poolarea",
             "display_name": "PoolArea",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -39180,7 +39180,7 @@
             "name": "poolqc",
             "display_name": "PoolQC",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 7,
             "num_missing": 1453,
             "categorical_stats": {
@@ -39392,7 +39392,7 @@
             "name": "fence",
             "display_name": "Fence",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 281,
             "num_missing": 1179,
             "categorical_stats": {
@@ -39670,7 +39670,7 @@
             "name": "miscfeature",
             "display_name": "MiscFeature",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 54,
             "num_missing": 1406,
             "categorical_stats": {
@@ -39948,7 +39948,7 @@
             "name": "miscval",
             "display_name": "MiscVal",
             "data_type": "integer",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 1460,
             "num_missing": 0,
             "numerical_stats": {
@@ -40658,7 +40658,7 @@
             "name": "mosold",
             "display_name": "MoSold",
             "data_type": "integer",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -41464,7 +41464,7 @@
             "name": "yrsold",
             "display_name": "YrSold",
             "data_type": "integer",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -41808,7 +41808,7 @@
             "name": "saletype",
             "display_name": "SaleType",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -42416,7 +42416,7 @@
             "name": "salecondition",
             "display_name": "SaleCondition",
             "data_type": "string",
-            "feature_type": "categorical",
+            "field_type": "categorical",
             "num_present": 1460,
             "num_missing": 0,
             "categorical_stats": {
@@ -42827,7 +42827,7 @@
         "name": "saleprice",
         "display_name": "SalePrice",
         "data_type": "integer",
-        "feature_type": "numerical",
+        "field_type": "numerical",
         "num_present": 1460,
         "num_missing": 0,
         "numerical_stats": {

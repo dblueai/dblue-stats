@@ -8,7 +8,7 @@
             "name": "vixchange",
             "display_name": "vixChange",
             "data_type": "number",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 554,
             "num_missing": 0,
             "numerical_stats": {
@@ -718,7 +718,7 @@
             "name": "netchange",
             "display_name": "netChange",
             "data_type": "number",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 554,
             "num_missing": 0,
             "numerical_stats": {
@@ -1428,7 +1428,7 @@
             "name": "prevchangenf",
             "display_name": "prevChangeNF",
             "data_type": "number",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 554,
             "num_missing": 0,
             "numerical_stats": {
@@ -2138,7 +2138,7 @@
             "name": "prevchangebnf",
             "display_name": "prevChangeBNF",
             "data_type": "number",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 554,
             "num_missing": 0,
             "numerical_stats": {
@@ -2848,7 +2848,7 @@
             "name": "nfoichange",
             "display_name": "NFOIChange",
             "data_type": "number",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 554,
             "num_missing": 0,
             "numerical_stats": {
@@ -3558,7 +3558,7 @@
             "name": "bnfoichange",
             "display_name": "BNFOIChange",
             "data_type": "number",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 554,
             "num_missing": 0,
             "numerical_stats": {
@@ -4268,7 +4268,7 @@
             "name": "basischange",
             "display_name": "basisChange",
             "data_type": "number",
-            "feature_type": "numerical",
+            "field_type": "numerical",
             "num_present": 554,
             "num_missing": 0,
             "numerical_stats": {
@@ -4979,7 +4979,7 @@
         "name": "close",
         "display_name": "Close",
         "data_type": "number",
-        "feature_type": "numerical",
+        "field_type": "numerical",
         "num_present": 554,
         "num_missing": 0,
         "numerical_stats": {

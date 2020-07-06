@@ -8,7 +8,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "vixChange",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -17,7 +17,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "netChange",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -26,7 +26,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "prevChangeNF",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -35,7 +35,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "prevChangeBNF",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -44,7 +44,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "NFOIChange",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -53,7 +53,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "BNFOIChange",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -62,7 +62,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "basisChange",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": false
             }
         },
@@ -71,7 +71,7 @@
             "nullable": false,
             "meta": {
                 "display_name": "Low",
-                "feature_type": "numerical",
+                "field_type": "numerical",
                 "is_target": true
             }
         }
